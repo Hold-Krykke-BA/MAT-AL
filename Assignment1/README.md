@@ -17,24 +17,61 @@ Create a program that models students, classes, rooms, dates, and their relation
 teaches(X, Y) :-
 	teacher(X, C),
 	student(Y, C).
+
+/* example:
+?- teaches(X, Y).
+X = anders,
+Y = ronni ;
+
+X = anders,
+Y = aage ;
+
+X = anders,
+Y = aage ;
+*/
 ```
 
 #### Question about what day which classes are held in what rooms:
-```prolog
-		
+```prolog		
 rooms(X, Y) :-
 	room(X, C),
 	class(C, Y).
+/* example
+?- rooms(X, Y).
+X = 101,
+Y = mon ;
+
+X = 101,
+Y = thu ;
+
+X = 201,
+Y = tue ;
+*/
 ```
 
 #### Question about which student is taught by who, in which room on what day.
 ```prolog
-% lectures(aage, anders,101, W)
-% lectures(X, anders,101, W)
-% lectures(X, Y,101, mon)
 lectures(X, Y, Z, W) :-
 	student(X, C),
 	teacher(Y, C),
 	room(Z, C),
 	class(C, W).
+	
+/* example
+?- lectures(X, Y, Z, W).
+X = ronni,
+Y = anders,
+Z = 101,
+W = mon ;
+
+X = ronni,
+Y = thomas,
+Z = 201,
+W = tue ;
+
+X = ulrik,
+Y = thomas,
+Z = 201,
+W = tue ;
+*/
 ```
