@@ -8,3 +8,25 @@ You can either invent your own problem to solve or use one of the ideas describe
 
 ## Student calendar
 Create a program that models students, classes, rooms, dates, and their relations.
+
+
+### Example questions to ask
+
+```prolog
+teaches(X, Y) :-
+	teacher(X, C),
+	student(Y, C).
+		
+rooms(X, Y) :-
+	room(X, C),
+	class(C, Y).
+
+% lectures(aage, anders,101, W)
+% lectures(X, anders,101, W)
+% lectures(X, Y,101, mon)
+lectures(X, Y, Z, W) :-
+	student(X, C),
+	teacher(Y, C),
+	room(Z, C),
+	class(C, W).
+```
