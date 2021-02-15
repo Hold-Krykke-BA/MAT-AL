@@ -36,7 +36,8 @@ Y = aage ;
 rooms(X, Y) :-
 	room(X, C),
 	class(C, Y).
-/* example
+	
+/* example:
 ?- rooms(X, Y).
 X = 101,
 Y = mon ;
@@ -57,7 +58,7 @@ lectures(X, Y, Z, W) :-
 	room(Z, C),
 	class(C, W).
 	
-/* example
+/* example:
 ?- lectures(X, Y, Z, W).
 X = ronni,
 Y = anders,
