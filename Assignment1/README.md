@@ -12,19 +12,21 @@ Create a program that models students, classes, rooms, dates, and their relation
 
 ### Example questions to ask
 
+Question about which teachers teaches which students:
 ```prolog
 teaches(X, Y) :-
 	teacher(X, C),
 	student(Y, C).
 ```
 
+Question about what day which classes are held in what rooms:
 ```prolog
 		
 rooms(X, Y) :-
 	room(X, C),
 	class(C, Y).
 ```
-
+Question about which student is taught by who, in which room on what day.
 ```prolog
 % lectures(aage, anders,101, W)
 % lectures(X, anders,101, W)
