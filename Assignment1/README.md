@@ -16,11 +16,16 @@ Create a program that models students, classes, rooms, dates, and their relation
 teaches(X, Y) :-
 	teacher(X, C),
 	student(Y, C).
+```
+
+```prolog
 		
 rooms(X, Y) :-
 	room(X, C),
 	class(C, Y).
+```
 
+```prolog
 % lectures(aage, anders,101, W)
 % lectures(X, anders,101, W)
 % lectures(X, Y,101, mon)
