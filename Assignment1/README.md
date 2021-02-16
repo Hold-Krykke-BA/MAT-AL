@@ -1,7 +1,7 @@
 # Assignment #1 - Programming with predicates
 Discrete Mathematics
 
-1 PROgramming in LOGic  
+PROgramming in LOGic  
 Create a program in Prolog.  
 You can either invent your own problem to solve or use one of the ideas described below. The program should include facts and rules. Also a set of meaningful questions to the program should be presented. Please push to github and supply a README.md file.  
 
