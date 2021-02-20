@@ -4,6 +4,11 @@ public class QuickUnion implements UnionFind {
     private int[] id;               // access to component id (site indexed)
     private int count;              // number of components
 
+    /**
+     * Initializes an empty union-find data structure with
+     * size amount of elements. Initially, each elements is in its own set.
+     * @param  size the number of elements
+     */
     public QuickUnion(int size) {
         this.id = new int[size];    // Initialize component id array
         count = size;               // Initialize count to size
@@ -25,7 +30,7 @@ public class QuickUnion implements UnionFind {
     public void union(int p, int q) {
         int pRoot = find(p);
         int qRoot = find(q);
-        if (pRoot == qRoot) return; //if(connected(p, q)) return;
+        if (pRoot == qRoot) return; // if(connected(p, q)) return;
         id[pRoot] = qRoot;
         count--;
     }
