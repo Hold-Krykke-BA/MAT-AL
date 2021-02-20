@@ -1,6 +1,6 @@
 # Assignment #2 - Implement Union-find
 
-###In groups:
+### In groups:
 Implement implementations of the Union-find algorithms:  
 • Quick-union  
 • Weighted-union  
