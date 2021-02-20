@@ -6,13 +6,13 @@ public class QuickUnion implements UnionFind {
 
     /**
      * Initializes an empty union-find data structure with
-     * size amount of elements. Initially, each elements is in its own set.
-     * @param  size the number of elements
+     * n amount of elements. Initially, each elements is in its own set.
+     * @param n the number of elements
      */
-    public QuickUnion(int size) {
-        this.id = new int[size];    // Initialize component id array
-        count = size;               // Initialize count to size
-        for (int i = 0; i < size; i++) {
+    public QuickUnion(int n) {
+        this.id = new int[n];    // Initialize component id array
+        count = n;               // Initialize count to n
+        for (int i = 0; i < n; i++) {
             id[i] = i;
         }
     }
@@ -51,7 +51,7 @@ public class QuickUnion implements UnionFind {
 
     @Override
     /**
-     * @return the number of sets (between 1 and size)
+     * @return the number of sets (between 1 and n)
      */
     public int count() {
         return count;
