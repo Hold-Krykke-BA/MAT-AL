@@ -14,9 +14,13 @@ public class QuickUnion implements UnionFind {
 
     @Override
     /**
-     * follow links to find the roots associated with p and q,
+     * Merges the set containing element p with the set containing element q
+     *
+     * Follow links to find the roots associated with p and q,
      * then rename one of the components by linking one of these
      * roots to the other
+     * @param  p one element
+     * @param  q the other element
      */
     public void union(int p, int q) {
         int pRoot = find(p);
@@ -30,6 +34,8 @@ public class QuickUnion implements UnionFind {
     /**
      * start at p, follow its link to another site and so
      * forth until reaching a site that has a link to itself (root)
+     * @param  p an element
+     * @return root of p
      */
     public int find(int p) {
         while (p != id[p]) {
@@ -39,11 +45,19 @@ public class QuickUnion implements UnionFind {
     }
 
     @Override
+    /**
+     * @return the number of sets (between 1 and size)
+     */
     public int count() {
         return count;
     }
 
     @Override
+    /**
+     * @param  p one element
+     * @param  q the other element
+     * @return true if p and q are in the same set else false.
+     */
     public boolean connected(int p, int q) {
         return find(p) == find(q);
     }
