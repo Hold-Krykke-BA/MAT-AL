@@ -21,10 +21,6 @@ public class WeightedUnion implements UnionFind{
     public void union(int p, int q) {
     }
 
-    @Override
-    public int count() {
-        return 0;
-    }
 
     @Override
     public int find(int p) {
@@ -32,7 +28,20 @@ public class WeightedUnion implements UnionFind{
     }
 
     @Override
+    /**
+     * @return the number of sets (between 1 and n)
+     */
+    public int count() {
+        return count;
+    }
+
+    @Override
+    /**
+     * @param  p one element
+     * @param  q the other element
+     * @return true if p and q are in the same set else false.
+     */
     public boolean connected(int p, int q) {
-        return false;
+        return find(p) == find(q);
     }
 }
