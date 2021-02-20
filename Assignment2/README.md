@@ -9,6 +9,6 @@ The solution accompanied with a description in a README.md file should be upload
 
 ## Description of solution
 * #### [Quick Union](https://github.com/Hold-Krykke-BA/MAT-AL/blob/main/Assignment2/src/solution/QuickUnion.java)
-// todo
+// todo describe
 * #### [Weighted Union](https://github.com/Hold-Krykke-BA/MAT-AL/blob/main/Assignment2/src/solution/WeightedUnion.java)
-// todo
+// todo describe
