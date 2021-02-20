@@ -1,4 +1,4 @@
-package com.company;
+package solution;
 
 public class WeightedUnion implements IUnionFind {
     private int[] id;                       // parent link

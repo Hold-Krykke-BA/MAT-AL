@@ -1,4 +1,4 @@
-package com.company;
+package solution;
 
 public class QuickUnion implements IUnionFind {
     private int[] id;               // access to component id

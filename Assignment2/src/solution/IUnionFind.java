@@ -1,4 +1,4 @@
-package com.company;
+package solution;
 
 public interface IUnionFind {
     void union(int p, int q);                   // add connection between p and q
