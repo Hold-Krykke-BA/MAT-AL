@@ -23,8 +23,17 @@ public class WeightedUnion implements UnionFind{
 
 
     @Override
+    /**
+     * start at p, follow its link to another site and so
+     * forth until reaching a site that has a link to itself (root)
+     * @param  p an element
+     * @return root of p
+     */
     public int find(int p) {
-        return 0;
+        while (p != id[p]) {
+            p = id[p];
+        }
+        return p;
     }
 
     @Override
