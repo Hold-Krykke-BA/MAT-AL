@@ -1,12 +1,12 @@
 package com.company;
 
 public class QuickUnion implements UnionFind {
-    private int[] id;               // access to component id (site indexed)
+    private int[] id;               // access to component id
     private int count;              // number of components
 
     /**
      * Initializes an empty union-find data structure with
-     * n amount of elements. Initially, each elements is in its own set.
+     * n amount of elements. Initially, each element is in its own set.
      * @param n the number of elements
      */
     public QuickUnion(int n) {
