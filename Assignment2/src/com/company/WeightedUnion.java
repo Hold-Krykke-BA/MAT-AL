@@ -1,6 +1,6 @@
 package com.company;
 
-public class WeightedUnion implements UnionFind{
+public class WeightedUnion implements IUnionFind {
     private int[] id;               // parent link
     private int[] size;             // size of component for roots
     private int count;              // number of components

@@ -1,6 +1,6 @@
 package com.company;
 
-public class QuickUnion implements UnionFind {
+public class QuickUnion implements IUnionFind {
     private int[] id;               // access to component id
     private int count;              // number of components
 
