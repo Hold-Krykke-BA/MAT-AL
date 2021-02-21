@@ -30,8 +30,8 @@ public class WeightedUnion implements IUnionFind {
      * @param  q the other element
      */
     public void union(int p, int q) {
-        int pRoot = find(p);
-        int qRoot = find(q);
+        int pRoot = findRoot(p);
+        int qRoot = findRoot(q);
         if (pRoot == qRoot) return;         // if(connected(p, q)) return;
 
         if (size[pRoot] < size[qRoot]) {    // root of p is smaller than root of q
@@ -53,7 +53,7 @@ public class WeightedUnion implements IUnionFind {
      * @param  p an element
      * @return root of p
      */
-    public int find(int p) {
+    public int findRoot(int p) {
         while (p != id[p]) {
             p = id[p];
         }

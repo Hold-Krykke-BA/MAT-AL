@@ -3,7 +3,7 @@ package solution;
 public interface IUnionFind {
     void union(int p, int q);                   // add connection between p and q
     int count();                                // number of components/sets
-    int find(int p);                            // component identifier for p ( given point p, return set of p)
+    int findRoot(int p);                            // component identifier for p ( given point p, return set of p)
 
     /**
      //     * @param  p one element
@@ -11,6 +11,6 @@ public interface IUnionFind {
      //     * @return true if p and q are in the same set else false.
      //     */
     default boolean connected(int p, int q) {
-        return find(p) == find(q);
+        return findRoot(p) == findRoot(q);
     };
 }
