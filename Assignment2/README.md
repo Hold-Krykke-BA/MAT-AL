@@ -38,7 +38,7 @@ rename one of the components by linking one of these roots to the other; hence t
 *Rather than arbitrarily connecting the second tree to the first for union(), we keep track of the size of each tree and always connect the smaller tree to the larger. This change requires slightly more code and another array to hold the node counts, but it leads to substantial improvements in efficiency.*[2]
 
 ### Results
-We manually tested the `union()` (and therefore `find()`) as well as `connected()` methods in the [Main](https://github.com/Hold-Krykke-BA/MAT-AL/blob/main/Assignment2/src/solution/Main.java) class.
+We manually tested the `union()` (and therefore `find()`) as well as the `connected()` methods in the [Main](https://github.com/Hold-Krykke-BA/MAT-AL/blob/main/Assignment2/src/solution/Main.java) class.
 
 In the book the execution time is measured using the [Stopwatch class](https://algs4.cs.princeton.edu/14analysis/Stopwatch.java.html), which we also did. The result is of course dependant on the machine the program is run on.
 
