@@ -37,7 +37,7 @@ public class QuickUnion implements IUnionFind {
 
     @Override
     /**
-     * start at p, follow its link to another site and so
+     * Start at p, follow its link to another site and so
      * forth until reaching a site that has a link to itself (root)
      * @param  p an element
      * @return root of p
@@ -57,13 +57,4 @@ public class QuickUnion implements IUnionFind {
         return count;
     }
 
-//    @Override
-//    /**
-//     * @param  p one element
-//     * @param  q the other element
-//     * @return true if p and q are in the same set else false.
-//     */
-//    public boolean connected(int p, int q) {
-//        return find(p) == find(q);
-//    }
 }
