@@ -12,3 +12,7 @@ The solution accompanied with a description in a README.md file should be upload
 // todo describe
 * #### [Weighted Union](https://github.com/Hold-Krykke-BA/MAT-AL/blob/main/Assignment2/src/solution/WeightedUnion.java)
 // todo describe
+
+## References
+[5-part walkthrough by WilliamFiset](https://www.youtube.com/watch?v=ibjEGG7ylHk)  
+[Booksite](https://algs4.cs.princeton.edu/15uf/)
