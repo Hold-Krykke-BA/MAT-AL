@@ -15,7 +15,7 @@ Union find is a data structure that keeps track of elements which are split into
 To find which component a particular element belongs to, find the root of that component by following the parent nodes until a self loop is reached (a node who's parent is itself)
 
 ##### Union
-To unify two elements, find which are the root nodes of each component, and if the root nodes are different, make one of the root nodes be the parent of the other. [1]
+To unify two elements, find which are the root nodes of each component, and if the root nodes are different, make one of the root nodes be the parent of the other.[1]
 
 #### Comparison
 ![img](https://i.imgur.com/U2dPyMu.png)[2]
@@ -37,5 +37,5 @@ To unify two elements, find which are the root nodes of each component, and if t
 
 ## References
 [1] [5-part walkthrough by WilliamFiset](https://www.youtube.com/watch?v=ibjEGG7ylHk)  
-[2] Algorithms ch. 1.5.
+[2] Algorithms ch. 1.5.  
 [Booksite](https://algs4.cs.princeton.edu/15uf/)  
