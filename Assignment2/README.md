@@ -32,4 +32,5 @@ To unify two elements, find which are the root nodes of each component, and if t
 
 ## References
 [1] [5-part walkthrough by WilliamFiset](https://www.youtube.com/watch?v=ibjEGG7ylHk)  
-[Booksite](https://algs4.cs.princeton.edu/15uf/)
+[Booksite](https://algs4.cs.princeton.edu/15uf/)  
+Algorithms ch. 1.5.
