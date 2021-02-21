@@ -22,16 +22,19 @@ To unify two elements, find which are the root nodes of each component, and if t
 
 ## Description of solution
 
-### [Quick Union](https://github.com/Hold-Krykke-BA/MAT-AL/blob/main/Assignment2/src/solution/QuickUnion.java)
+#### [Quick Union](https://github.com/Hold-Krykke-BA/MAT-AL/blob/main/Assignment2/src/solution/QuickUnion.java)
 // todo describe
-### [Weighted Union](https://github.com/Hold-Krykke-BA/MAT-AL/blob/main/Assignment2/src/solution/WeightedUnion.java)
+#### [Weighted Union](https://github.com/Hold-Krykke-BA/MAT-AL/blob/main/Assignment2/src/solution/WeightedUnion.java)
 // todo describe
 
-## Timings
+### Results
+We manually tested the `union()` (and therefore `find()`) as well as `connected()` methods in the [Main](https://github.com/Hold-Krykke-BA/MAT-AL/blob/main/Assignment2/src/solution/Main.java) class.
 
-### Timings Quick Union
+In the book the execution time is measured using the [Stopwatch class](https://algs4.cs.princeton.edu/14analysis/Stopwatch.java.html), which we also did. The result is of course dependant on the machine the program is run on.
+
+#### Timings Quick Union
 //Todo  
-### Timings Weighted Union
+#### Timings Weighted Union
 //Todo
 
 
