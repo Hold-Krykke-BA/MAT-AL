@@ -17,7 +17,7 @@ To find which component a particular element belongs to, find the root of that c
 ##### Union
 To unify two elements, find which are the root nodes of each component, and if the root nodes are different, make one of the root nodes be the parent of the other.[1]
 
-#### Comparison
+#### Comparison of quick-union and weighted-union
 ![img](https://i.imgur.com/U2dPyMu.png)[2]
 
 ## Description of solution
