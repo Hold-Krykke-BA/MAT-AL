@@ -22,7 +22,7 @@ To unify two elements, find which are the root nodes of each component, and if t
 
 ## Description of solution
 
-For all unions we implemented the `IUnionFind` interface.
+For all unions we implemented the [IUnionFind](https://github.com/Hold-Krykke-BA/MAT-AL/blob/main/Assignment2/src/solution/IUnionFind.java) interface. This was used in all implementations.
 
 #### [Quick Union](https://github.com/Hold-Krykke-BA/MAT-AL/blob/main/Assignment2/src/solution/QuickUnion.java)
 
@@ -72,20 +72,18 @@ Using the `size` array we check for the smaller one and unite it with the larger
 - add info about why we merge small into large
 ```
 
-#### (Extra) Weighted Union with Path Compression
-```diff  
-- Needs link (same with all `code links`
-```
+#### (Extra) [Weighted Union with Path Compression](https://github.com/Hold-Krykke-BA/MAT-AL/blob/main/Assignment2/src/solution/WeightedUnionPC.java)
+Additionally, (as an extra) we added a version of the Weighted Union with Path Compression as discussed in the book. This can be found in `WeightedUnionPC.java` with its own `Main` method.
 
 ### Results
 We manually tested the `union()` (and therefore `find()`) as well as the `connected()` methods in the [Main](https://github.com/Hold-Krykke-BA/MAT-AL/blob/main/Assignment2/src/solution/Main.java) class.
 
-Additionally, (as an extra) we added a version of the Weighted Union with Path Compression as discussed in the book. This can be found in `WeightedUnionPC.java` with its own `Main` method.
-
-For timings we used the data files provided by the booksite.[3]  
+For timings we used the [data files](https://github.com/Hold-Krykke-BA/MAT-AL/tree/main/Assignment2/src/data) provided by the booksite.[3]  
 The  files (pre-union) consist of relatively 11, 900 and 2.000.000 connections. After the union these numbers are 2, 3 and 6. (Algorithms pg. 221, pg. 227)  
 
 In the book the execution time is measured using the [Stopwatch class](https://algs4.cs.princeton.edu/14analysis/Stopwatch.java.html), which we also did. The result is of course dependant on the machine the program is run on.
+
+Our timings can be found in [Timings.java](https://github.com/Hold-Krykke-BA/MAT-AL/blob/main/Assignment2/src/solution/Timings.java) and the stopwatch implementation can be found in [Stopwatch.java](https://github.com/Hold-Krykke-BA/MAT-AL/blob/main/Assignment2/src/utils/Stopwatch.java).
 
 #### Timings Quick Union
 Timings of the three data files using `QuickUnion.java`.
@@ -103,7 +101,7 @@ Timings of the three data files using `WeightedUnion.java`.
 |-----------|--------------------------|----------------------------|---------------------------|
 |   Asger   |           NULL           |            NULL            |            NULL           |
 |  Camilla  |           NULL           |            NULL            |            NULL           |
-|    Rúni   |           1ms           |            25ms            |            NULL           |
+|    Rúni   |           1ms           |            25ms            |            3196           |
 
 #### (Extra) Timings Weighted Union with Path Comression
 Timings of the three data files using `WeightedUnionPC.java`.
