@@ -15,5 +15,8 @@ You can find the complete works [here](https://github.com/datsoftlyngby/soft2020
   * Sorting using a Trie
 * be extended with other sorting algorithms in the future.
 * messure and log the time used for each algorithm as a function of the file size in words.  
-  
 The solution accompanied with a description in a README.md file should be uploaded (pushed) to a git repository.
+  
+## Description of solution
+  
+## References
