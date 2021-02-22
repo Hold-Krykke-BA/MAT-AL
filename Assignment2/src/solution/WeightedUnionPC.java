@@ -83,4 +83,22 @@ public class WeightedUnionPC implements IUnionFind {
     public int count() {
         return count;
     }
+
+    public static void main(String[] args) {
+        WeightedUnionPC wupc = new WeightedUnionPC(10); //extra
+
+        //weighted union with path compression (EXTRA)
+        wupc.union(1,3);
+        wupc.union(6,2);
+        wupc.union(9,8);
+        wupc.union(4,5);
+        wupc.union(0,7);
+
+        wupc.union(3,9);
+        wupc.union(8,0);
+        System.out.println("\n***** Weighted Union with Path Compression (EXTRA) *****\n");
+        System.out.println("3 and 8 connected? " + wupc.connected(3,8)); //true
+        System.out.println("0 and 3 connected? " + wupc.connected(0,3)); //true
+        System.out.println("4 and 6 connected? " + wupc.connected(4,6)); //false
+    }
 }
