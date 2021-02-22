@@ -26,7 +26,7 @@ To unify two elements, find which are the root nodes of each component, and if t
 ```diff
 - todo describe
 ``` 
-*To implement find(), we start at the given site, follow its link to another site, follow that sites link to yet another site, and so forth, following links until reaching a root, a site that has a link to itself.  
+> *To implement find(), we start at the given site, follow its link to another site, follow that sites link to yet another site, and so forth, following links until reaching a root, a site that has a link to itself.  
 Two sites are in the same component if and only if this process leads them to the same root.  
 To validate this process, we need union(p, q) to maintain this invariant, which is easily arranged: we follow links to find the roots associated with p and q, then
 rename one of the components by linking one of these roots to the other; hence the name quick-union.*[2]
@@ -35,7 +35,7 @@ rename one of the components by linking one of these roots to the other; hence t
 ```diff
 - todo describe
 ```
-*Rather than arbitrarily connecting the second tree to the first for union(), we keep track of the size of each tree and always connect the smaller tree to the larger. This change requires slightly more code and another array to hold the node counts, but it leads to substantial improvements in efficiency.*[2]
+> *Rather than arbitrarily connecting the second tree to the first for union(), we keep track of the size of each tree and always connect the smaller tree to the larger. This change requires slightly more code and another array to hold the node counts, but it leads to substantial improvements in efficiency.*[2]
 
 ### Results
 We manually tested the `union()` (and therefore `find()`) as well as the `connected()` methods in the [Main](https://github.com/Hold-Krykke-BA/MAT-AL/blob/main/Assignment2/src/solution/Main.java) class.
