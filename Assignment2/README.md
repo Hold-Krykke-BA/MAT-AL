@@ -101,7 +101,7 @@ Timings of the three data files using `WeightedUnion.java`.
 |-----------|--------------------------|----------------------------|---------------------------|
 |   Asger   |           NULL           |            NULL            |            NULL           |
 |  Camilla  |           NULL           |            NULL            |            NULL           |
-|    Rúni   |           1ms           |            25ms            |            3196ms          |
+|    Rúni   |           1ms           |            25ms            |            3589ms          |
 
 #### (Extra) Timings Weighted Union with Path Comression
 Timings of the three data files using `WeightedUnionPC.java`.
@@ -110,7 +110,7 @@ Timings of the three data files using `WeightedUnionPC.java`.
 |-----------|-----------------------|-------------------------|------------------------|
 |   Asger   |          NULL         |           NULL          |          NULL          |
 |  Camilla  |          NULL         |           NULL          |          NULL          |
-|    Rúni   |          2ms         |           22ms          |          3271ms          |
+|    Rúni   |          2ms         |           22ms          |          3196ms          |
 
 ## References
 [1] [5-part walkthrough by WilliamFiset](https://www.youtube.com/watch?v=ibjEGG7ylHk)  
