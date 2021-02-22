@@ -73,7 +73,12 @@ Using the `size` array we check for the smaller one and unite it with the larger
 ```
 
 #### (Extra) [Weighted Union with Path Compression](https://github.com/Hold-Krykke-BA/MAT-AL/blob/main/Assignment2/src/solution/WeightedUnionPC.java)
-Additionally, (as an extra) we added a version of the Weighted Union with Path Compression as discussed in the book. This can be found in `WeightedUnionPC.java` with its own `Main` method.
+Additionally, (as an extra) we added a version of the Weighted Union with Path Compression as discussed in the book. This can be found in `WeightedUnionPC.java` with its own `Main` method. The notable changes are in the [findRoot()](https://github.com/Hold-Krykke-BA/MAT-AL/blob/main/Assignment2/src/solution/WeightedUnionPC.java#L61) method.
+In the book it is discussed this way on pg. 231:  
+> *To implement path compression, we just add another loop to find() that sets the id[] entry corresponding to each node encountered along the way to link directly to the root. The net result is to flatten the trees almost completely, ap-
+proximating the ideal achieved by the quick-find algorithm.*  
+
+And the booksite holds a [solution](https://algs4.cs.princeton.edu/15uf/QuickUnionPathCompressionUF.java.html) as well.
 
 ### Results
 We manually tested the `union()` (and therefore `find()`) as well as the `connected()` methods in the [Main](https://github.com/Hold-Krykke-BA/MAT-AL/blob/main/Assignment2/src/solution/Main.java) class.
