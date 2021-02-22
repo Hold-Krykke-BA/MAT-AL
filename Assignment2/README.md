@@ -68,9 +68,12 @@ Complimenting the book and the Quick Union, much of the code is the same. We als
 The constructor still takes an int `n` which is used to initialize the now three variables.  
 The methods `findRoot(int p)` and `count()` stay the same, but the real change lies in `union(int p, int q)`:  
 Using the `size` array we check for the smaller one and unite it with the larger one and at the same time we update the `size` array.  
-```diff  
-- add info about why we merge small into large
-```
+
+We add the smaller to the larger one due to the reasons presented in the book, in particular in the pargraph "Weighted quick-union analysis." (pg. 227):
+> *These tree structures look complex, but they have the simple property that the height of a tree of 2^n nodes is n. Furthermore, when we merge two trees of 2n nodes, we get a tree of 2^n+1 nodes, and we increase the height of the tree to n+1. This observation generalizes to provide a proof that the weighted algorithm can guarantee logarithmic performance.*  
+
+And the followup on page 229-232 (Proposition H, it's proof, it's corollary and the corollaries proof ending in the _Optimal Algorithms_ and _Amortized cost plots_ paragraphs):  
+> (...) *When we combine a tree of size i with a tree of size j with i ≤ j and i+j=k, we increase the depth of each node in the smaller set by 1, but they are now in a tree of size i+j=k, so the property is preserved because 1+ lg i = lg(i+i) ≤ lg(i+j)=lg k.*
 
 #### (Extra) [Weighted Union with Path Compression](https://github.com/Hold-Krykke-BA/MAT-AL/blob/main/Assignment2/src/solution/WeightedUnionPC.java)
 Additionally, (as an extra) we added a version of the Weighted Union with Path Compression as discussed in the book. This can be found in `WeightedUnionPC.java` with its own `Main` method. The notable changes are in the [findRoot()](https://github.com/Hold-Krykke-BA/MAT-AL/blob/main/Assignment2/src/solution/WeightedUnionPC.java#L61) method.
