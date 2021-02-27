@@ -100,6 +100,12 @@ We implemented two different interfaces, [ISort](src/solution/sorts/ISort.java) 
   - add details about implementation
   ```
 ### Merge Sort
+The implementation of Merge Sort followed the one in class.  
+
+- [Basic implementation without interface/generics](https://github.com/Hold-Krykke-BA/MAT-AL/commit/b9cf82e8d75e3890eaae66cfb72e4e708f328b37) (Verbose chat output)  
+- [Generics implementation with double/integer test](https://github.com/Hold-Krykke-BA/MAT-AL/commit/cd804e632ab1f0b6d9fe86607a43c7a143e8b68e) (Verbose chat output)  
+- 
+
    ```diff
   - add details about implementation
   ```
