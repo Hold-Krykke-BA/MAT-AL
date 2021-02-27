@@ -110,7 +110,7 @@ We implemented two different interfaces, [ISort](src/solution/sorts/ISort.java) 
 
 ### Future usability
 This section refers to the following requirement of the assignment:  
-*[the program can] be extended with other sorting algorithms in the future.*  
+- *[the program can] be extended with other sorting algorithms in the future.*  
 
 As already mentioned above, we implemented two interfaces, one from the book which utilizes `Comparable<T>` and one shown in-class that uses Java Generics, both of which can be found in [src/solution/sorts](src/solution/sorts/).  
 
@@ -120,7 +120,7 @@ As already mentioned above, we implemented two interfaces, one from the book whi
   ```
 ### Timings
 This section refers to the following requirement of the assignment:  
-*[the program can] messure and log the time used for each algorithm as a function of the file size in words.*  
+- *[the program can] messure and log the time used for each algorithm as a function of the file size in words.*  
 
 To time our program we utilized the provided [Stopwatch](src/utils/Stopwatch.java) class.  
 
