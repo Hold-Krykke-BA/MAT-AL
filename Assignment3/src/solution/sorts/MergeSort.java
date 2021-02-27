@@ -1,31 +1,53 @@
 package solution.sorts;
 
-public class MergeSort {
+import utils.CountComparator;
+
+import java.util.Comparator;
+
+public class MergeSort implements ISortGeneric {
+
+    @Override
+    public <T> void sort(Comparator<T> comp, T[] array) {
+        sort(array, 0, array.length - 1, comp);
+    }
+
+    @Override
+    public <T> boolean isSorted(Comparator<T> comp, T[] array) {
+        for (int i = 0; i < array.length - 1; i++) {
+            if (comp.compare(array[i], array[i + 1]) > 0) return false; //should never occur if sorted incremental
+        }
+        return true;
+    }
 
     /**
      * Splits array recursively until only 1 is left and merges
+     *
+     * @param arr
+     * @param left
+     * @param right
      */
-    void sort(int arr[], int left, int right) {
+    private <T> void sort(T[] arr, int left, int right, Comparator<T> comp) {
         if (left < right) { //If not already sorted
             int middle = left + (right - left) / 2;
             System.out.printf("Middle calculated: %d + (%d - %d) / 2 = %d", left, right, left, middle);
             System.out.println("\n");
-            sort(arr, left, middle); //sort from 0...mid
-            sort(arr, middle + 1, right); //sort from mid+1...end
-            merge(arr, left, middle, right);
+            sort(arr, left, middle, comp); //sort from 0...mid
+            sort(arr, middle + 1, right, comp); //sort from mid+1...end
+            merge(arr, left, middle, right, comp);
         } else {
-            System.out.println("(Sort) Notice: else-statement hit. left >= right");
+            System.out.println("(Sort) Notice: Recursive function broken. (left >= right)");
         }
     }
 
     /**
      * Performs the merge
-     * @param arr original array
-     * @param left left (start) pointer
+     *
+     * @param arr    original array
+     * @param left   left (start) pointer
      * @param middle middle pointer
-     * @param right right (end) pointer
+     * @param right  right (end) pointer
      */
-    void merge(int arr[], int left, int middle, int right) {
+    private <T> void merge(T[] arr, int left, int middle, int right, Comparator<T> comp) {
         System.out.println("**Merging**");
         // Find sizes of two subarrays to be merged
         int leftArraySize = middle - left + 1;
@@ -34,8 +56,8 @@ public class MergeSort {
         System.out.printf("rightArraySize: %d-%d = %d\n", right, middle, rightArraySize);
 
         /* Create temp arrays */
-        int leftTemp[] = new int[leftArraySize];
-        int rightTemp[] = new int[rightArraySize];
+        T[] leftTemp = (T[]) new Object[leftArraySize];
+        T[] rightTemp = (T[]) new Object[rightArraySize];
 
         /*Copy data to temp arrays*/
         for (int i = 0; i < leftArraySize; ++i)
@@ -51,11 +73,11 @@ public class MergeSort {
         // Initial index of merged subarray array
         int outerIdx = left; //starting point (be it 0 or mid+1)
         while (leftIdx < leftArraySize && rightIdx < rightArraySize) {
-            if (leftTemp[leftIdx] <= rightTemp[rightIdx]) { //left <= right
-                arr[outerIdx] = leftTemp[leftIdx]; //set arr[k] to left value
+            if (comp.compare(leftTemp[leftIdx], rightTemp[rightIdx]) <= 0) { //left <= right
+                arr[outerIdx] = leftTemp[leftIdx]; //set arr[outerIdx] to left value
                 leftIdx++;
             } else {
-                arr[outerIdx] = rightTemp[rightIdx]; //left >= right && set arr[k] to right value
+                arr[outerIdx] = rightTemp[rightIdx]; //left >= right && set arr[outerIdx] to right value
                 rightIdx++;
             }
             outerIdx++;
@@ -81,21 +103,43 @@ public class MergeSort {
     }
 
     public static void main(String[] args) {
-        int arr[] = {15, 7, 12, 3, 9, 10, 2, 5, 3};
+        System.out.println("***Integer test start***");
+        Integer arr[] = {15, 7, 12, 3, 9, 10, 2, 5, 3};
+        CountComparator<Integer> integerCount = new CountComparator(Comparator.naturalOrder());
+        MergeSort ms = new MergeSort();
 
         System.out.println("array before:");
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i] + " ");
-        }
-        System.out.println("\n");
+        ms.print(arr);
+        System.out.println("\nIs it sorted before? " + ms.isSorted(integerCount, arr));
 
-        MergeSort ms = new MergeSort();
-        ms.sort(arr, 0, arr.length - 1);
+        ms.sort(arr, 0, arr.length - 1, integerCount);
 
         System.out.println("\narray after:");
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i] + " ");
-        }
-    }
+        ms.print(arr);
 
+        System.out.println("");
+        System.out.println("Is it sorted after? " + ms.isSorted(integerCount, arr));
+        System.out.println("Compares: " + integerCount.getCount());
+        System.out.println("***Integer test end***");
+
+
+        System.out.println("***Double test start***");
+        Double array[] = {15.0, 7.5, 12.2, 3.2, 9.1, 10.5, 2.7, 5.3, 3.9};
+        CountComparator<Double> DoubleCount = new CountComparator(Comparator.naturalOrder());
+        MergeSort msDouble = new MergeSort();
+
+        System.out.println("array before:");
+        msDouble.print(array);
+        System.out.println("\nIs it sorted before? " + msDouble.isSorted(DoubleCount, array));
+
+        msDouble.sort(array, 0, array.length - 1, DoubleCount);
+
+        System.out.println("\narray after:");
+        msDouble.print(array);
+
+        System.out.println("");
+        System.out.println("Is it sorted after? " + msDouble.isSorted(DoubleCount, array));
+        System.out.println("Compares: " + DoubleCount.getCount());
+        System.out.println("***Double test end***");
+    }
 }
