@@ -35,4 +35,18 @@ public class FileUtility {
                 .toArray(String[]::new);
     }
 
+    /**
+     * A basic implementation of toStringArray utilizing the default delimiter pattern "[^A-Za-z']+"
+     * @param path
+     * @return
+     * @throws IOException
+     */
+    public static String[] toStringArray(String path) throws IOException {
+        return Files.lines(Paths.get(path))
+                .flatMap(line -> Stream.of(line.split("[^A-Za-z']+")))
+                .filter(word -> !word.isEmpty())
+                .map(word -> word.toLowerCase())
+                .toArray(String[]::new);
+    }
+
 }
