@@ -22,17 +22,29 @@ The solution accompanied with a description in a README.md file should be upload
   - add details (if any)
   ```
 ### Selection Sort
+
    ```diff
   - add details
   ```
+[Selection sort in 3 minutes](https://www.youtube.com/watch?v=g-PGLbMth_g) by Michael Sambol on Youtube.    
+[Sorts 2 Selection Sort](https://www.youtube.com/watch?v=fgYlVyrt1vE) by RobEdwards on Youtube.  
+
 ### Insertion Sort
+
    ```diff
   - add details
   ```
+[Insertion sort in 2 minutes](https://www.youtube.com/watch?v=JU767SDMDvA) by Michael Sambol on Youtube.  
+[Insertion Sort Algorithm Made Simple [Sorting Algorithms]](https://www.youtube.com/watch?v=nKzEJWbkPbQ) by Programming with Mosh on Youtube.  
+[Sorts 3 Insertion Sort](https://www.youtube.com/watch?v=eTvQIbB-AuE) by RobEdwards on Youtube.  
+
 ### Heap Sort
+
    ```diff
   - add details
   ```
+[Heap sort in 4 minutes](https://www.youtube.com/watch?v=2DmK_H7IdTo) by Michael Sambol on Youtube.  
+[Heaps 5 HeapSort](https://www.youtube.com/watch?v=LbB357_RwlY) by RobEdwards on Youtube.  
 ### Merge Sort
 Details can be found in chapter 2.2 *Mergesort* (pg. 270) of Algorithms.  
 
