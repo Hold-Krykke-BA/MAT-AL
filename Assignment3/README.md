@@ -18,24 +18,36 @@ You can find the complete works [here](https://github.com/datsoftlyngby/soft2020
 The solution accompanied with a description in a README.md file should be uploaded (pushed) to a git repository.
   
 ## Discussion  
+   ```diff
+  - add details (if any)
+  ```
 ### Selection Sort
+   ```diff
+  - add details
+  ```
 ### Insertion Sort
+   ```diff
+  - add details
+  ```
 ### Heap Sort
+   ```diff
+  - add details
+  ```
 ### Merge Sort
 Details can be found in chapter 2.2 *Mergesort* (pg. 270) of Algorithms.  
 
 The chapter goes into detail of the different variations of Merge Sort:  
 - Abstract in-place merge  
   ```diff
-  - add details
+  - add details from chapter
   ```
 - Top-down mergesort
    ```diff
-  - add details
+  - add details from chapter
   ```
 - Bottom-up mergesort
   ```diff
-  - add details
+  - add details from chapter
   ```
 
 Additionally, the chapter discusses solutions to optimize the algorithm (pg. 275):
@@ -62,7 +74,7 @@ As well as touches on the complexity of sorting (pg. 279 onwards).
 
 ### Sorting using a Trie
    ```diff
-  - add details
+  - add details 
   ```
 ## Description of solution
 #### Folder content
