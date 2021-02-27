@@ -61,7 +61,9 @@ As well as touches on the complexity of sorting (pg. 279 onwards).
 [Sorts 6 Merge Sort](https://www.youtube.com/watch?v=qdv3i6X0PiQ) by RobEdwards on Youtube.  
 
 ### Sorting using a Trie
-
+   ```diff
+  - add details
+  ```
 ## Description of solution
 #### Folder content
 - [src/solution](src/solution)  
