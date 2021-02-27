@@ -98,8 +98,8 @@ Timings of the three data files using `QuickUnion.java`.
 | User Name | Quick Union `tinyUF.txt` | Quick Union `mediumUF.txt` | Quick Union `largeUF.txt` |
 |-----------|--------------------------|----------------------------|---------------------------|
 |   Asger   |           NULL           |            NULL            |            NULL           |
-|  Camilla  |           1ms            |            10ms            |            :(             |
-|    Rúni   |           18ms           |            66ms            |            **Crash**           |
+|  Camilla  |           1ms            |            10ms            |            2610202ms      |
+|    Rúni   |           18ms           |            66ms            |            **Crash**      |
 
 #### Timings Weighted Union
 Timings of the three data files using `WeightedUnion.java`.  
