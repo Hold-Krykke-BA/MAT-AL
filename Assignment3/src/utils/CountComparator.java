@@ -26,6 +26,7 @@ public class CountComparator<T> implements Comparator<T> {
 
     @Override
     public int compare(T o1, T o2) {
+        ++count;
         return original.compare(o1, o2);
     }
 }
