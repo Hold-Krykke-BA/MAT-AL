@@ -98,7 +98,7 @@ Timings of the three data files using `QuickUnion.java`.
 | User Name | Quick Union `tinyUF.txt` | Quick Union `mediumUF.txt` | Quick Union `largeUF.txt` |
 |-----------|--------------------------|----------------------------|---------------------------|
 |   Asger   |           NULL           |            NULL            |            NULL           |
-|  Camilla  |           NULL           |            NULL            |            NULL           |
+|  Camilla  |           1ms            |            10ms            |            :(             |
 |    Rúni   |           18ms           |            66ms            |            **Crash**           |
 
 #### Timings Weighted Union
@@ -107,8 +107,8 @@ Timings of the three data files using `WeightedUnion.java`.
 | User Name | Weighted Union `tinyUF.txt` | Weighted Union `mediumUF.txt` | Weighted Union `largeUF.txt` |
 |-----------|--------------------------|----------------------------|---------------------------|
 |   Asger   |           NULL           |            NULL            |            NULL           |
-|  Camilla  |           NULL           |            NULL            |            NULL           |
-|    Rúni   |           1ms           |            25ms            |            3589ms          |
+|  Camilla  |           1ms            |            10ms            |            2208ms         |
+|    Rúni   |           1ms            |            25ms            |            3589ms         |
 
 #### (Extra) Timings Weighted Union with Path Comression
 Timings of the three data files using `WeightedUnionPC.java`.
@@ -116,8 +116,8 @@ Timings of the three data files using `WeightedUnionPC.java`.
 | User Name | Weighted Union W/ PC `tinyUF.txt` | Weighted Union W/ PC `mediumUF.txt` | Weighted Union W/ PC `largeUF.txt` |
 |-----------|-----------------------|-------------------------|------------------------|
 |   Asger   |          NULL         |           NULL          |          NULL          |
-|  Camilla  |          NULL         |           NULL          |          NULL          |
-|    Rúni   |          2ms         |           22ms          |          3196ms          |
+|  Camilla  |          1ms          |           10ms          |          2200ms        |
+|    Rúni   |          2ms          |           22ms          |          3196ms        |
 
 ## References
 [1] [5-part walkthrough by WilliamFiset](https://www.youtube.com/watch?v=ibjEGG7ylHk)  
