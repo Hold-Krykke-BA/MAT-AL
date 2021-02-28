@@ -12,13 +12,19 @@ public interface ISortGeneric {
     <T> void sort(Comparator<T> comp, T[] array);
 
     /**
-     * Check if array is sorted using comparator of choice
+     * Checks if given array is sorted incrementally, by checking if [i] is smaller than [i+1]
      *
      * @param comp  comparator of choice
      * @param array array of type of choice
-     * @return
+     * @param <T>
+     * @return whether or not the array is sorted
      */
-    <T> boolean isSorted(Comparator<T> comp, T[] array);
+    default <T> boolean isSorted(Comparator<T> comp, T[] array){
+        for (int i = 0; i < array.length - 1; i++) {
+            if (comp.compare(array[i], array[i + 1]) > 0) return false; //should never occur if sorted incremental
+        }
+        return true;
+    }
 
     /**
      * Prints an arrays contents

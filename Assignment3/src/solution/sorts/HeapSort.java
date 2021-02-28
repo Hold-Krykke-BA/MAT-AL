@@ -128,12 +128,4 @@ public class HeapSort implements ISortGeneric{
     private  int parent(int i) {
         return (i-1)/2;
     }
-
-    @Override
-    public <T> boolean isSorted(Comparator<T> comp, T[] array) {
-        for (int i = 0; i < array.length-1; i++) {
-            if (comp.compare(array[i], array[i + 1]) > 0) return false;
-        }
-        return true;
-    }
 }

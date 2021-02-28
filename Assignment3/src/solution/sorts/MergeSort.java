@@ -11,21 +11,6 @@ public class MergeSort implements ISortGeneric {
         sort(array, 0, array.length - 1, comp);
     }
 
-    /**
-     * Checks if given array is sorted incrementally, by checking if [i] is smaller than [i+1]
-     *
-     * @param comp  comparator of choice
-     * @param array array of type of choice
-     * @param <T>
-     * @return whether or not the array is sorted
-     */
-    @Override
-    public <T> boolean isSorted(Comparator<T> comp, T[] array) {
-        for (int i = 0; i < array.length - 1; i++) {
-            if (comp.compare(array[i], array[i + 1]) > 0) return false; //should never occur if sorted incremental
-        }
-        return true;
-    }
 
     /**
      * Splits array recursively until only 1 is left and merges
