@@ -43,7 +43,7 @@ public class FileUtility {
      */
     public static String[] toStringArray(String path) throws IOException {
         return Files.lines(Paths.get(path))
-                .flatMap(line -> Stream.of(line.split("[^A-Za-z']+")))
+                .flatMap(line -> Stream.of(line.split("[^A-Za-z]+")))
                 .filter(word -> !word.isEmpty())
                 .map(word -> word.toLowerCase())
                 .toArray(String[]::new);
