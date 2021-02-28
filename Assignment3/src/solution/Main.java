@@ -39,7 +39,8 @@ public class Main {
             if (alg.equals("Heap")) {
                 HeapSort heapsort = new HeapSort();
                 heapsort.sort(stringCountComparator, array);
-                print(array);
+                //System.out.println("\n");
+                //heapsort.print(array, 100000, 100050);
             }
             if (alg.equals("Merge")) {
                 MergeSort ms = new MergeSort();
@@ -53,13 +54,5 @@ public class Main {
         /* Check if array is sorted according to isSorted*/
         //MergeSort ms2 = new MergeSort();
         //System.out.println("Is array sorted according to MergeSort? " + ms2.isSorted(stringCountComparator, array));
-    }
-
-    private static <T> void print(T[] array){
-        System.out.println("***********************************");
-        for (int i = 100000; i < 100050; i++) {
-            System.out.println(i + ": " + array[i]);
-        }
-        System.out.println("***********************************");
     }
 }
