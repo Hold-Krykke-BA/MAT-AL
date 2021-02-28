@@ -59,6 +59,7 @@ with Mosh on Youtube.
 
 ### Merge Sort
 <img name="img1" alt="" align="right" width="185px" src="https://i.imgur.com/EJkLtY6.png">
+
 Details can be found in chapter 2.2 *Mergesort* (pg. 270) of Algorithms.
 
 The chapter goes into detail of the different variations of Merge Sort:
