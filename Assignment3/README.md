@@ -89,15 +89,19 @@ As well as touches on the complexity of sorting (pg. 279 onwards).
   - add details 
   ```
 ## Description of solution
-#### Folder content
+#### Folder structure
 - [src/solution](src/solution)  
-  Holds the interfaces, the different solutions implemented, and a Main class.
+  Holds the interfaces, the different algorithms implemented, and a Main class.
 
 - [src/utils](src/utils)  
   Holds the utilities provided in-class.
+  
+- [src/data](src/data)  
+  Holds the data file(s).
 
-We implemented two different interfaces, [ISort](src/solution/sorts/ISort.java) as described in the book utilizing `Comparable<T>` as well as [ISortGeneric](src/solution/sorts/ISortGeneric.java) which utilizes Java Generics as shown in class.
+We implemented two different interfaces, [ISort](src/solution/sorts/ISort.java) as described in the book utilizing `Comparable<T>` as well as [ISortGeneric](src/solution/sorts/ISortGeneric.java) which utilizes Java Generics as shown in class.  
 
+The implementation and solution to the assignment can be found in [src/solution/Main.java](src/solution/Main.java).  
 
 ### Selection Sort
    ```diff
@@ -116,11 +120,22 @@ The implementation of Merge Sort followed the one in class.
 
 - [Basic implementation without interface/generics](https://github.com/Hold-Krykke-BA/MAT-AL/commit/b9cf82e8d75e3890eaae66cfb72e4e708f328b37) (Verbose chat output)  
 - [Generics implementation with double/integer test](https://github.com/Hold-Krykke-BA/MAT-AL/commit/cd804e632ab1f0b6d9fe86607a43c7a143e8b68e) (Verbose chat output)  
-- 
+- [Clean generics implementation](https://github.com/Hold-Krykke-BA/MAT-AL/commit/c38b670987edb6250a4f31f439a337ff3f9e6f23) (**non**-verbose)  
 
-   ```diff
-  - add details about implementation
-  ```
+In [the implementation](src/solution/sorts/MergeSort.java) we tested the algorithm in its own Main method, in particular one for Integers and one for Doubles.
+The implementation follows the structure of the [ISortGeneric interface](src/solution/sorts/ISortGeneric.java):  
+
+`isSorted(Comparator<T> comp, T[] array)` assumes the array is sorted incrementally, i.e. numbers in ascending order or words in alphabetical order - this is however based on the implementation of the `Comparator`.  
+
+`sort(T[] arr, int left, int right, Comparator<T> comp)` will first check if the array is already sorted, and if not it will partition the array by sorting recursively: Once from `[0...mid]` and once from `[mid+1...end]`, ending in a call to `merge()`, a method unique to MergeSort and not part of the ISortGeneric interface.  
+
+`merge(T[] arr, int left, int middle, int right, Comparator<T> comp)` starts out by creating and populating temporary arrays, one for the left and one for the right side of the array being merged.  
+Following this, we enter a while loop based on the indices of the temporary arrays, incrementing with each operation: if the `Comparator` deems `left` to be "smaller or equal" to `right` we set *the original arrays value* to the value from the temporary `left` array.  
+If it is the other way around, we instead set the array value to the value from the `right` temporary array.  
+
+When the while loop exits we have a final check for leftover elements, in case of an uneven array. (i.e. the `right` array is size 2, while the `left` is size 3)  
+The check basically does the same as in the while loop, setting the value from the temporary array in the original array.
+
 ### Sorting using a Trie
    ```diff
   - add details about implementation
