@@ -23,7 +23,7 @@ public class Stopwatch implements AutoCloseable {
 
     @Override
     public void close() {
-        out.printf("%5.6f\n", step());
+        out.printf("\n%5.6fms", step());
     }
 
     public static void main(String... args) throws Exception {

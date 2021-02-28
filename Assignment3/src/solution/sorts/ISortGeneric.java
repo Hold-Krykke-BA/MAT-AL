@@ -45,4 +45,21 @@ public interface ISortGeneric {
         }
         System.out.println();
     }
+
+    /**
+     * Prints an array using a custom start and end point.
+     *
+     * @param array array to print
+     * @param start starting point in array (index)
+     * @param end   ending point in array (index)
+     * @param <T>
+     */
+    default <T> void print(T[] array, int start, int end) {
+        int _start = (start < end && start >= 0) ? start : 0;
+        int _end = (end > start && end <= array.length) ? end : array.length;
+        for (int i = _start; i < _end; i++) {
+            System.out.print(array[i] + " ");
+        }
+        System.out.println();
+    }
 }

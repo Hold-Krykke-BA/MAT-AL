@@ -11,6 +11,14 @@ public class MergeSort implements ISortGeneric {
         sort(array, 0, array.length - 1, comp);
     }
 
+    /**
+     * Checks if given array is sorted incrementally, by checking if [i] is smaller than [i+1]
+     *
+     * @param comp  comparator of choice
+     * @param array array of type of choice
+     * @param <T>
+     * @return whether or not the array is sorted
+     */
     @Override
     public <T> boolean isSorted(Comparator<T> comp, T[] array) {
         for (int i = 0; i < array.length - 1; i++) {
@@ -29,13 +37,9 @@ public class MergeSort implements ISortGeneric {
     private <T> void sort(T[] arr, int left, int right, Comparator<T> comp) {
         if (left < right) { //If not already sorted
             int middle = left + (right - left) / 2;
-            System.out.printf("Middle calculated: %d + (%d - %d) / 2 = %d", left, right, left, middle);
-            System.out.println("\n");
             sort(arr, left, middle, comp); //sort from 0...mid
             sort(arr, middle + 1, right, comp); //sort from mid+1...end
             merge(arr, left, middle, right, comp);
-        } else {
-            System.out.println("(Sort) Notice: Recursive function broken. (left >= right)");
         }
     }
 
@@ -48,12 +52,9 @@ public class MergeSort implements ISortGeneric {
      * @param right  right (end) pointer
      */
     private <T> void merge(T[] arr, int left, int middle, int right, Comparator<T> comp) {
-        System.out.println("**Merging**");
         // Find sizes of two subarrays to be merged
         int leftArraySize = middle - left + 1;
         int rightArraySize = right - middle;
-        System.out.printf("leftArraySize: %d-%d+1 = %d\n", middle, left, leftArraySize);
-        System.out.printf("rightArraySize: %d-%d = %d\n", right, middle, rightArraySize);
 
         /* Create temp arrays */
         T[] leftTemp = (T[]) new Object[leftArraySize];
@@ -87,7 +88,6 @@ public class MergeSort implements ISortGeneric {
 
         /* Copy remaining elements of L[] if any */
         while (leftIdx < leftArraySize) {
-            System.out.println("(Merge) Notice: Found remaining elements in left\n");
             arr[outerIdx] = leftTemp[leftIdx];
             leftIdx++;
             outerIdx++;
@@ -95,13 +95,17 @@ public class MergeSort implements ISortGeneric {
 
         /* Copy remaining elements of R[] if any */
         while (rightIdx < rightArraySize) {
-            System.out.println("(Merge) Notice: Found remaining elements in left\n");
             arr[outerIdx] = rightTemp[rightIdx];
             rightIdx++;
             outerIdx++;
         }
     }
 
+    /**
+     * Manual testing of the generic interface with integer as well as double
+     *
+     * @param args
+     */
     public static void main(String[] args) {
         System.out.println("***Integer test start***");
         Integer arr[] = {15, 7, 12, 3, 9, 10, 2, 5, 3};
