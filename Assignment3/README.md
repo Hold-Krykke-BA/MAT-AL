@@ -85,11 +85,13 @@ and `a[0..1]` before finally doing the first merge of `a[0]` with `a[1]` (...)*
 
 ![](https://i.imgur.com/5KeoIs0.png)
 
-- #### Bottom-up mergesort
+- #### Bottom-up mergesort (pg. 277)  
 > *Another way to implement mergesort is to organize the merges so that we do
 all the merges of tiny subarrays on one pass, then do a second pass to merge those subarrays
 in pairs, and so forth, continuing until we
 do a merge that encompasses the whole array. (...)*
+
+More details can be found on pg. 278 and the booksite.
 
 Additionally, the chapter discusses solutions to optimize the algorithm (pg. 275):
 
