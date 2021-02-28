@@ -4,7 +4,7 @@ import solution.sorts.MergeSort;
 import utils.CountComparator;
 import utils.FileUtility;
 import utils.Stopwatch;
-
+import solution.sorts.HeapSort;
 import java.io.IOException;
 import java.util.Comparator;
 
@@ -14,8 +14,8 @@ public class Main {
             String[] shakespeare = FileUtility.toStringArray("src/data/shakespeare-complete-works.txt");
             //time("Insertion", shakespeare);
             //time("Selection", shakespeare);
-            //time("Heap", shakespeare);
-            time("Merge", shakespeare);
+            time("Heap", shakespeare);
+            //time("Merge", shakespeare);
             //time("Trie", shakespeare);
         } catch (IOException e) {
             System.out.println("File not found -> " + e.getMessage());
@@ -36,7 +36,11 @@ public class Main {
         try (Stopwatch timer = new Stopwatch()) {
             //if (alg.equals("Insertion")) Insertion.sort(array);
             //if (alg.equals("Selection")) Selection.sort(array);
-            //if (alg.equals("Heap")) Heap.sort(array);
+            if (alg.equals("Heap")) {
+                HeapSort heapsort = new HeapSort();
+                heapsort.sort(stringCountComparator, array);
+                print(array);
+            }
             if (alg.equals("Merge")) {
                 MergeSort ms = new MergeSort();
                 ms.sort(stringCountComparator, array);
@@ -49,5 +53,13 @@ public class Main {
         /* Check if array is sorted according to isSorted*/
         //MergeSort ms2 = new MergeSort();
         //System.out.println("Is array sorted according to MergeSort? " + ms2.isSorted(stringCountComparator, array));
+    }
+
+    private static <T> void print(T[] array){
+        System.out.println("***********************************");
+        for (int i = 100000; i < 100050; i++) {
+            System.out.println(i + ": " + array[i]);
+        }
+        System.out.println("***********************************");
     }
 }
