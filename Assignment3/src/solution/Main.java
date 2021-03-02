@@ -1,6 +1,8 @@
 package solution;
 
+import solution.sorts.InsertionSort;
 import solution.sorts.MergeSort;
+import solution.sorts.SelectionSort;
 import utils.CountComparator;
 import utils.FileUtility;
 import utils.Stopwatch;
@@ -11,10 +13,10 @@ import java.util.Comparator;
 public class Main {
     public static void main(String[] args) {
         try {
-            String[] shakespeare = FileUtility.toStringArray("src/data/shakespeare-complete-works.txt");
+            String[] shakespeare = FileUtility.toStringArray("Assignment3/src/data/shakespeare-complete-works.txt");
             //time("Insertion", shakespeare);
             //time("Selection", shakespeare);
-            time("Heap", shakespeare);
+            //time("Heap", shakespeare);
             //time("Merge", shakespeare);
             //time("Trie", shakespeare);
         } catch (IOException e) {
@@ -34,8 +36,14 @@ public class Main {
         System.out.printf("Initiating %ssort on an array of size %d.", alg, array.length);
 
         try (Stopwatch timer = new Stopwatch()) {
-            //if (alg.equals("Insertion")) Insertion.sort(array);
-            //if (alg.equals("Selection")) Selection.sort(array);
+            if (alg.equals("Insertion")) {
+                InsertionSort insertion = new InsertionSort();
+                insertion.sort(stringCountComparator, array);
+            }
+            if (alg.equals("Selection")) {
+                SelectionSort selection = new SelectionSort();
+                selection.sort(stringCountComparator, array);
+            }
             if (alg.equals("Heap")) {
                 HeapSort heapsort = new HeapSort();
                 heapsort.sort(stringCountComparator, array);
