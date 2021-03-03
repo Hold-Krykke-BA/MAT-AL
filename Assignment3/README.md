@@ -78,7 +78,7 @@ int[] array = {4, 5, 3, 10, 1}
  10(3)    1(4)
  
  
- //Heapify on index 1:
+// Heapify on index 1:
 
          4(0)
         /   \
@@ -87,7 +87,7 @@ int[] array = {4, 5, 3, 10, 1}
 5(3)    1(4)
  
  
- //Heapify on index 0:
+// Heapify on index 0:
 
     --> 10(0)
         /  \
@@ -107,7 +107,7 @@ Position of children and parents in relation to index i:
     left(2*i+1)  right(2*i+2)
 
 
- // Example with values:
+// Example with values:
  
            parent(3)
           /       \
@@ -116,9 +116,9 @@ Position of children and parents in relation to index i:
     (2*3+1)    (2*3+2)
     
     
-//Parents position in relation to child is: (i-1)/2
+// Parents position in relation to child is: (i-1)/2
+// Example with i = 7 (left child) and i = 8 (right child):
 
-Example with i = 7 (left child) and i = 8 (right child):
            parent(3)
           /       \
          /         \
