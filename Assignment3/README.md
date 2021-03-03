@@ -49,10 +49,83 @@ with Mosh on Youtube.
 [Sorts 3 Insertion Sort](https://www.youtube.com/watch?v=eTvQIbB-AuE) by RobEdwards on Youtube.
 
 ### Heap Sort
+Details about Heap Sort can be found here:
+* [Baeldung Implementation](https://www.baeldung.com/java-heap-sort)
+* [Geeks For Geeks Implementation](https://www.geeksforgeeks.org/heap-sort/)
+* [Good Stackoverflow explanation of the building of the heap](https://stackoverflow.com/a/52613602)
+* [Geeks For Geeks heap visualization](https://www.geeksforgeeks.org/leaf-starting-point-binary-heap-data-structure/)
 
-   ```diff
-  - add details
-  ```
+#### Explanation
+For a max heap, a parent node is always greater than the value(s) in its child(ren).
+
+Heap Sort Algorithm: 
+* Build a heap. 
+* The largest value is the root of the heap. 
+  * Swap it with the last item of the heap.
+  * Reduce the size of heap by 1. 
+  * Heapify the root of the tree. 
+* Repeat the above as long as the heap size > 1.
+
+Visualization:
+```
+int[] array = {4, 5, 3, 10, 1}
+// index:      0, 1, 2, 3,  4
+
+         4(0)
+        /   \
+     5(1)   3(2)
+    /   \
+ 10(3)    1(4)
+ 
+ 
+ //Heapify on index 1:
+
+         4(0)
+        /   \
+ --> 10(1)    3(2)
+    /   \
+5(3)    1(4)
+ 
+ 
+ //Heapify on index 0:
+
+    --> 10(0)
+        /  \
+     5(1)  3(2)
+    /   \
+ 4(3)    1(4)
+```
+
+Position of children and parents in relation to index i:
+
+```
+// Children in relation to parent at i:
+
+           parent(i)
+         /        \
+        /          \
+    left(2*i+1)  right(2*i+2)
+
+
+ // Example with values:
+ 
+           parent(3)
+          /       \
+         /         \
+    left(7)    right(8)
+    (2*3+1)    (2*3+2)
+    
+    
+//Parents position in relation to child is: (i-1)/2
+
+Example with i = 7 (left child) and i = 8 (right child):
+           parent(3)
+          /       \
+         /         \
+    left(7)    right(8)
+    (7-1)/2    (7-1)/2  (integer division is rounded down)
+```
+
 
 [Heap sort in 4 minutes](https://www.youtube.com/watch?v=2DmK_H7IdTo) by Michael Sambol on Youtube.  
 [Heaps 5 HeapSort](https://www.youtube.com/watch?v=LbB357_RwlY) by RobEdwards on Youtube.
