@@ -314,11 +314,11 @@ This section refers to the following requirement of the assignment:
 
 To time our program we utilized the provided [Stopwatch](src/utils/Stopwatch.java) class.
 
-|         | Selection Sort        | Insertion Sort | Heap Sort  | Merge Sort  | Using a Trie |
-|:-------:|:---------------------:|:--------------:|:----------:|:-----------:|:------------:|
-|  Asger  |      NULL             |      NULL      |    NULL    |    NULL     |     NULL     |
-| Camilla |      6.443.783ms      |      NULL      |    953ms   |    678ms    |     NULL     |
-|   Rúni  |      NULL             |      NULL      |    NULL    |    1095ms   |     NULL     |
+|         | Selection Sort        | Insertion Sort  | Heap Sort  | Merge Sort  | Using a Trie |
+|:-------:|:---------------------:|:---------------:|:----------:|:-----------:|:------------:|
+|  Asger  |      NULL             |      NULL       |    NULL    |    NULL     |     NULL     |
+| Camilla |      6.443.783ms      |      9851730ms  |    953ms   |    678ms    |     NULL     |
+|   Rúni  |      NULL             |      NULL       |    NULL    |    1095ms   |     NULL     |
 
 ## References
 
