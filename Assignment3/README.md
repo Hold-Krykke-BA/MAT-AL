@@ -312,10 +312,6 @@ We went with ISortGeneric (implementing Generics over `Comparable`) as it seemed
 This section refers to the following requirement of the assignment:
 > *[the program can] messure and log the time used for each algorithm as a function of the file size in words.*
 
-https://latex.codecogs.com/gif.latex?O%5Cleft%28n%5Clog%5Cleft%20%28%20n%20%5Cright%20%29%20%5Cright%29
-
-![equation](https://latex.codecogs.com/gif.latex?O%5Cleft%28n%5Clog%5Cleft%20%28%20n%20%5Cright%20%29%20%5Cright%29)
-
 To time our program we utilized the provided [Stopwatch](src/utils/Stopwatch.java) class.
 
 |         | Selection Sort ![equation](https://latex.codecogs.com/gif.latex?O%5Cleft%28n%5E%7B2%7D%20%5Cright%29) | Insertion Sort ![equation](https://latex.codecogs.com/gif.latex?O%5Cleft%28n%5E%7B2%7D%20%5Cright%29)| Heap Sort ![equation](https://latex.codecogs.com/gif.latex?O%5Cleft%28n%5Clog%5Cleft%20%28%20n%20%5Cright%20%29%20%5Cright%29)| Merge Sort ![equation](https://latex.codecogs.com/gif.latex?O%5Cleft%28n%5Clog%5Cleft%20%28%20n%20%5Cright%20%29%20%5Cright%29)| Using a Trie |
