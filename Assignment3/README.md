@@ -29,6 +29,7 @@ program, that can
   ```
 
 ### Selection Sort
+![image](https://user-images.githubusercontent.com/35559774/109822906-b5330f80-7c37-11eb-9ef5-fc6a914534ea.png)
 
    ```diff
   - add details
@@ -38,6 +39,7 @@ program, that can
 [Sorts 2 Selection Sort](https://www.youtube.com/watch?v=fgYlVyrt1vE) by RobEdwards on Youtube.
 
 ### Insertion Sort
+![image](https://user-images.githubusercontent.com/35559774/109822934-bc5a1d80-7c37-11eb-863c-0227b019a457.png)
 
    ```diff
   - add details
@@ -49,6 +51,8 @@ with Mosh on Youtube.
 [Sorts 3 Insertion Sort](https://www.youtube.com/watch?v=eTvQIbB-AuE) by RobEdwards on Youtube.
 
 ### Heap Sort
+![image](https://user-images.githubusercontent.com/35559774/109822968-c4b25880-7c37-11eb-9e29-9b26d3ad76e4.png)
+
 Details about Heap Sort can be found here:
 * [Baeldung Implementation](https://www.baeldung.com/java-heap-sort)
 * [Geeks For Geeks Implementation](https://www.geeksforgeeks.org/heap-sort/)
@@ -132,6 +136,8 @@ Position of children and parents in relation to index i:
 [Heaps 5 HeapSort](https://www.youtube.com/watch?v=LbB357_RwlY) by RobEdwards on Youtube.
 
 ### Merge Sort
+![image](https://user-images.githubusercontent.com/35559774/109822871-ab111100-7c37-11eb-8cb5-21d164e1c115.png)
+
 <img name="img1" alt="" align="right" width="185px" src="https://i.imgur.com/EJkLtY6.png">
 
 Details can be found in chapter 2.2 *Mergesort* (pg. 270) of Algorithms.
