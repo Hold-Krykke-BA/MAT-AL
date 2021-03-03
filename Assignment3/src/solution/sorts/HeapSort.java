@@ -6,39 +6,10 @@ public class HeapSort implements ISortGeneric{
     private int heapSize;
 
     /**
-     * Binary Heap is a complete tree (All levels are completely filled except possibly the last level and the last level has all keys as left as possible).
-     *
-     * Links for readme:
-     *
-     * heap sort:
-     * https://www.baeldung.com/java-heap-sort
-     * https://www.geeksforgeeks.org/heap-sort/
-     *
-     * build heap explanation
-     * https://stackoverflow.com/a/52613602
-     *
-     * leaf structure
-     * https://www.geeksforgeeks.org/leaf-starting-point-binary-heap-data-structure/
-     *
-     *  unsorted
-     *  {8, 2, 6, 4, 0, 3}
-     *  index is in parenthesis
-     *         8(0)
-     *        /    \
-     *       /      \
-     *      2(1)     6(2)
-     *     /  \      /
-     *    4(3) 0(4) 3(5)
-     *
-     *  after heapify (recursively)
-     *  {0, 2, 3, 4, 6, 8}
-     *  index is in parenthesis
-     *         08(0)
-     *        /    \
-     *       /      \
-     *      6(1)     3(2)
-     *     /  \      /
-     *    4(3) 2(4) 0(5)
+     * Binary Heap is a complete tree
+     * (All levels are completely filled except
+     * possibly the last level and the last level
+     * has all keys as left as possible).
      */
 
     @Override
@@ -77,13 +48,13 @@ public class HeapSort implements ISortGeneric{
             node = leftChild(i);
         }
 
-        // if right child is largest, swap node to left child
+        // if right child is largest, swap node to right child
         if ((rightChild(i) <= heapSize - 1) && (comp.compare(array[rightChild(i)], array[node]) > 0)) {
             node = rightChild(i);
         }
 
         // if node is not largest, recursively heapify subtree
-        // if node is largest, retrun to next loop in sort()
+        // if node is largest, return to next loop in sort()
         if (node != i) {
             T temp = array[i];
             array[i] = array[node];
@@ -93,18 +64,9 @@ public class HeapSort implements ISortGeneric{
     }
 
     /**
-     * children position in relation to parent
-     *           parent(i)
-     *         /        \
-     *        /          \
-     *    left(2*i+1)  right(2*i+2)
-     *
-     * Example:
-     *           parent(3)
-     *          /       \
-     *         /         \
-     *    left(7)    right(8)
-     *    (2*3+1)    (2*3+2)
+     * children position in relation to parent at i
+     * left(2*i+1)
+     * right(2*i+2)
     * */
     private  int leftChild(int i) {
         return (2 * i) + 1;
@@ -115,14 +77,7 @@ public class HeapSort implements ISortGeneric{
     }
 
     /**
-     * parents position in relation to child is: (i-1)/2
-     *
-     * Example:
-     *           parent(3)
-     *          /       \
-     *         /         \
-     *    left(7)    right(8)
-     *    (7-1)/2    (7-1)/2  (integer division is rounded down)
+     * parents position in relation to child at i: (i-1)/2
      * */
 
     private  int parent(int i) {
