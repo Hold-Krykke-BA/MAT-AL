@@ -238,10 +238,13 @@ One take away from this is the average comparisons:
   ```
 
 ### Heap Sort
+Heap sort is implemented with a max heap and is made generic, following the interface [ISortGeneric](src/solution/sorts/ISortGeneric.java). It was tested in the main method of the program. 
 
-   ```diff
-  - add details about implementation
-  ```
+`isSorted(Comparator<T> comp, T[] array)` assumes the array is sorted in ascending natural order, based on the default `Comparator`.
+
+`sort(Comparator<T> comp, T[] array)` calls `buildHeap(array, comp)` to build the heap from the array and run the intial rounds of heapify. After this the loop swaps the root with the last node (or index) for as long as the heap is greater than 1, counting down and calling _heapify_ each loop.
+`heapify(T[] array, int i, Comparator comp)` assumes i is the largest node, then checks if this is true. If this is not the case the heap is heapified recursively until it is true. 
+
 
 ### Merge Sort
 
