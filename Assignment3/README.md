@@ -23,6 +23,8 @@ program, that can
   The solution accompanied with a description in a README.md file should be uploaded (pushed) to a git repository.
 
 ## Discussion
+Big O notation chart:
+![image](https://user-images.githubusercontent.com/35559774/109824290-fa0b7600-7c38-11eb-9d32-478c9fa2011f.png)
 
    ```diff
   - add details (if any)
