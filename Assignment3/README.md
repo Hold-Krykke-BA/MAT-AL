@@ -314,7 +314,7 @@ This section refers to the following requirement of the assignment:
 
 To time our program we utilized the provided [Stopwatch](src/utils/Stopwatch.java) class.
 
-|         | Selection Sort O(n^2) | Insertion Sort O(n^2)| Heap Sort O(nlogn)| Merge Sort O(nlogn) | Using a Trie |
+|         | Selection Sort ![equation](https://latex.codecogs.com/gif.latex?O%5Cleft%28n%5E%7B2%7D%20%5Cright%29)) | Insertion Sort ![equation](https://latex.codecogs.com/gif.latex?O%5Cleft%28n%5E%7B2%7D%20%5Cright%29)| Heap Sort O(nlogn)| Merge Sort O(nlogn) | Using a Trie |
 |:-------:|:---------------------:|:--------------------:|:-----------------:|:-------------------:|:------------:|
 |  Asger  |      NULL             |      NULL            |    NULL           |    NULL             |     NULL     |
 | Camilla |      6.443.783ms      |      9.851.730ms     |    953ms          |    678ms            |     NULL     |
