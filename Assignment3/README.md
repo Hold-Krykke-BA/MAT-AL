@@ -67,6 +67,7 @@ Heap Sort Algorithm:
 * Repeat the above as long as the heap size > 1.
 
 Visualization:
+![](https://www.codesdope.com/staticroot/images/algorithm/heapsort2.gif)
 ```
 int[] array = {4, 5, 3, 10, 1}
 // index:      0, 1, 2, 3,  4
@@ -95,8 +96,7 @@ int[] array = {4, 5, 3, 10, 1}
     /   \
  4(3)    1(4)
 ```
-![](https://www.codesdope.com/staticroot/images/algorithm/heapsort2.gif)
-  
+    
 Position of children and parents in relation to index i:
 
 ```
