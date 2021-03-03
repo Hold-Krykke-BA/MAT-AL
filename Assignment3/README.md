@@ -238,6 +238,7 @@ One take away from this is the average comparisons:
   ```
 
 ### Heap Sort
+* [Implementation is located here](https://github.com/Hold-Krykke-BA/MAT-AL/blob/main/Assignment3/src/solution/sorts/HeapSort.java)
 Heap sort is implemented with a max heap and is made generic, following the interface [ISortGeneric](src/solution/sorts/ISortGeneric.java). It was tested in the main method of the program. 
 
 `isSorted(Comparator<T> comp, T[] array)` assumes the array is sorted in ascending natural order, based on the default `Comparator`, and checks weather that is the case.
