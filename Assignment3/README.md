@@ -34,9 +34,8 @@ program, that can
 ### Selection Sort
 ![image](https://user-images.githubusercontent.com/35559774/109822906-b5330f80-7c37-11eb-9ef5-fc6a914534ea.png)
 
-   ```diff
-  - add details
-  ```
+Details about implementation of Selection Sort can be found here:
+* [Geeks for Geeks Implementation] (https://www.geeksforgeeks.org/selection-sort/)
 
 [Selection sort in 3 minutes](https://www.youtube.com/watch?v=g-PGLbMth_g) by Michael Sambol on Youtube.    
 [Sorts 2 Selection Sort](https://www.youtube.com/watch?v=fgYlVyrt1vE) by RobEdwards on Youtube.
