@@ -257,16 +257,12 @@ One take away from this is the average comparisons:
 `17282216/930778 = 18,5674951492` average comparisons per word.
 
 ### Selection Sort
-
-   ```diff
-  - add details about implementation
-  ```
+* [Implementation of Selection Sort](https://github.com/Hold-Krykke-BA/MAT-AL/blob/main/Assignment3/src/solution/sorts/SelectionSort.java)
+`sort(Comparator<T> comp, T[] array)` calls `selectionSort(T[] arr, Comparator<T> comp)`. The selectionSort function consists of two nested for loops. The outer for loop, which iterates through the whole array, takes the value of the current index and run it through the inner for loop, which compares it with the rest of the array, searching for the smallest value. When the inner loop is done, the smallest value found is then swapped to the front of the array. The process then continues with the next iteration of the outer loop. 
 
 ### Insertion Sort
-
-   ```diff
-  - add details about implementation
-  ```
+* [Implementation of Insertion Sort](https://github.com/Hold-Krykke-BA/MAT-AL/blob/main/Assignment3/src/solution/sorts/InsertionSort.java)
+ `sort(Comparator<T> comp, T[] array)` calls `insertionSort(T[] arr, Comparator<T> comp)`. The insertionSort functions consists of a for loop and a nested while loop. The outer for loop iterates over the array starting from index 1, it save the value of the current index as a key and compares it to the values of the index lower than it self. Each value that is higher than the key has its index increamented by 1. When it finds a value that is lower than key, it moves the key to the index after that value. 
 
 ### Heap Sort
 * [Implementation is located here](https://github.com/Hold-Krykke-BA/MAT-AL/blob/main/Assignment3/src/solution/sorts/HeapSort.java)
