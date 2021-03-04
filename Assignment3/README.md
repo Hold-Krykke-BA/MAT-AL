@@ -34,11 +34,34 @@ program, that can
 ### Selection Sort
 ![image](https://user-images.githubusercontent.com/35559774/109822906-b5330f80-7c37-11eb-9ef5-fc6a914534ea.png)
 
-Details about implementation of Selection Sort can be found here:
-* [Geeks for Geeks Implementation] (https://www.geeksforgeeks.org/selection-sort/)
-
 [Selection sort in 3 minutes](https://www.youtube.com/watch?v=g-PGLbMth_g) by Michael Sambol on Youtube.    
 [Sorts 2 Selection Sort](https://www.youtube.com/watch?v=fgYlVyrt1vE) by RobEdwards on Youtube.
+
+Details about implementation of Selection Sort can be found here:
+* [Geeks for Geeks Implementation](https://www.geeksforgeeks.org/selection-sort/)
+
+#### Explanation
+The Selection Sort algorithm sorts an array by repeatedly looping through it searching for the smallest value and then moves it to the front of the array.
+
+```
+arr[] = 64 25 12 22 11
+
+// Find the minimum element in arr[0...4]
+// and place it at beginning
+11 25 12 22 64
+
+// Find the minimum element in arr[1...4]
+// and place it at beginning of arr[1...4]
+11 12 25 22 64
+
+// Find the minimum element in arr[2...4]
+// and place it at beginning of arr[2...4]
+11 12 22 25 64
+
+// Find the minimum element in arr[3...4]
+// and place it at beginning of arr[3...4]
+11 12 22 25 64 
+```
 
 ### Insertion Sort
 ![image](https://user-images.githubusercontent.com/35559774/109822934-bc5a1d80-7c37-11eb-863c-0227b019a457.png)
