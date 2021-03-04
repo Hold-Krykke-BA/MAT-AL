@@ -41,7 +41,7 @@ Details about implementation of Selection Sort can be found here:
 * [Geeks for Geeks Implementation](https://www.geeksforgeeks.org/selection-sort/)
 
 #### Explanation
-The Selection Sort algorithm sorts an array by repeatedly looping through it searching for the smallest value and then moves it to the front of the array.
+The Selection Sort algorithm sorts an array by repeatedly looping through it searching for the smallest value. When the whole array has been iterated through, the smallest value found is swapped to front of the array. The arrays starting index is then increment by one and the process is repeated until the array has been fully sorted. The time complexity will always be ![CodeCogsEqn](https://user-images.githubusercontent.com/21987376/109980247-f8f14c00-7cff-11eb-8189-f9eb40acb994.gif) as there are two nested for loops.
 
 ```
 arr[] = 64 25 12 22 11
