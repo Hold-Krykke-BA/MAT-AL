@@ -7,6 +7,7 @@ import utils.CountComparator;
 import utils.FileUtility;
 import utils.Stopwatch;
 import solution.sorts.HeapSort;
+
 import java.io.IOException;
 import java.util.Comparator;
 
@@ -32,7 +33,21 @@ public class Main {
      * @return
      */
     private static void time(String alg, String[] array) {
+        //compares by natural order ("Lexicographic" order)
         CountComparator<String> stringCountComparator = new CountComparator(Comparator.naturalOrder());
+
+        /*
+        CountComparator<String> stringCountComparator = new CountComparator(new Comparator<String>() {
+            //compares by length
+            @Override
+            public int compare(String o1, String o2) {
+                if (o1.length() > o2.length()) return 1;
+                else if (o1.length() < o2.length()) return -1;
+                else return 0;
+            }
+        });
+         */
+
         System.out.printf("Initiating %ssort on an array of size %d.", alg, array.length);
 
         try (Stopwatch timer = new Stopwatch()) {
