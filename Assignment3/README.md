@@ -41,7 +41,8 @@ Details about implementation of Selection Sort can be found here:
 * [Geeks for Geeks Implementation](https://www.geeksforgeeks.org/selection-sort/)
 
 #### Explanation
-The Selection Sort algorithm sorts an array by repeatedly looping through it searching for the smallest value. When the whole array has been iterated through, the smallest value found is swapped to front of the array. The arrays starting index is then increment by one and the process is repeated until the array has been fully sorted. The time complexity will always be ![CodeCogsEqn](https://user-images.githubusercontent.com/21987376/109980247-f8f14c00-7cff-11eb-8189-f9eb40acb994.gif) as there are two nested for loops.
+The Selection Sort algorithm sorts an array by repeatedly looping through it searching for the smallest value. When the whole array has been iterated through, the smallest value found is swapped to front of the array. The arrays starting index is then increment by one and the process is repeated until the array has been fully sorted.
+The time complexity will always be ![CodeCogsEqn](https://user-images.githubusercontent.com/21987376/109980247-f8f14c00-7cff-11eb-8189-f9eb40acb994.gif) as there are two nested for loops.
 
 ```
 arr[] = 64 25 12 22 11
@@ -66,14 +67,19 @@ arr[] = 64 25 12 22 11
 ### Insertion Sort
 ![image](https://user-images.githubusercontent.com/35559774/109822934-bc5a1d80-7c37-11eb-863c-0227b019a457.png)
 
-   ```diff
-  - add details
-  ```
-
 [Insertion sort in 2 minutes](https://www.youtube.com/watch?v=JU767SDMDvA) by Michael Sambol on Youtube.  
 [Insertion Sort Algorithm Made Simple [Sorting Algorithms]](https://www.youtube.com/watch?v=nKzEJWbkPbQ) by Programming
 with Mosh on Youtube.  
 [Sorts 3 Insertion Sort](https://www.youtube.com/watch?v=eTvQIbB-AuE) by RobEdwards on Youtube.
+
+Details about implementation of Selection Sort can be found here:
+* [Geeks for Geeks Implementation](https://www.geeksforgeeks.org/insertion-sort/)
+
+#### Explanation
+Insertion Sort iterate through the array starting at index 1, it then compare the current element to the elements infront of it in the array. When it finds am element that is lower than it self it stops and increament the index of all the elements it compared to before by 1, then it moves it self to the position after the lower element.
+The time complexity will for the most part be ![CodeCogsEqn](https://user-images.githubusercontent.com/21987376/109980247-f8f14c00-7cff-11eb-8189-f9eb40acb994.gif), however if its sorting an already sorted array the time complexity will instead be ![CodeCogsEqn (1)](https://user-images.githubusercontent.com/21987376/109989568-e7f90880-7d08-11eb-8770-a5f4349c81a3.gif).
+
+![image](https://media.geeksforgeeks.org/wp-content/uploads/insertionsort.png)
 
 ### Heap Sort
 ![image](https://user-images.githubusercontent.com/35559774/109822968-c4b25880-7c37-11eb-9e29-9b26d3ad76e4.png)
@@ -257,16 +263,12 @@ One take away from this is the average comparisons:
 `17282216/930778 = 18,5674951492` average comparisons per word.
 
 ### Selection Sort
-
-   ```diff
-  - add details about implementation
-  ```
+* [Implementation of Selection Sort](https://github.com/Hold-Krykke-BA/MAT-AL/blob/main/Assignment3/src/solution/sorts/SelectionSort.java)
+`sort(Comparator<T> comp, T[] array)` calls `selectionSort(T[] arr, Comparator<T> comp)`. The selectionSort function consists of two nested for loops. The outer for loop, which iterates through the whole array, takes the value of the current index and run it through the inner for loop, which compares it with the rest of the array, searching for the smallest value. When the inner loop is done, the smallest value found is then swapped to the front of the array. The process then continues with the next iteration of the outer loop. 
 
 ### Insertion Sort
-
-   ```diff
-  - add details about implementation
-  ```
+* [Implementation of Insertion Sort](https://github.com/Hold-Krykke-BA/MAT-AL/blob/main/Assignment3/src/solution/sorts/InsertionSort.java)
+ `sort(Comparator<T> comp, T[] array)` calls `insertionSort(T[] arr, Comparator<T> comp)`. The insertionSort functions consists of a for loop and a nested while loop. The outer for loop iterates over the array starting from index 1, it save the value of the current index as a key and compares it to the values of the indexs lower than it self. Each value that the key compares it self to has its index increament by 1. When it finds a value that is lower than key, it moves the key to the index after that value. 
 
 ### Heap Sort
 * [Implementation is located here](https://github.com/Hold-Krykke-BA/MAT-AL/blob/main/Assignment3/src/solution/sorts/HeapSort.java)
