@@ -324,3 +324,6 @@ To time our program we utilized the provided [Stopwatch](src/utils/Stopwatch.jav
 
 Algorithms ch. 2.1, 2.2, 2.3  
 https://algs4.cs.princeton.edu/22mergesort/  
+https://algs4.cs.princeton.edu/21elementary/  
+https://algs4.cs.princeton.edu/24pq/  
+https://algs4.cs.princeton.edu/lectures/keynote/52Tries-2x2.pdf  
