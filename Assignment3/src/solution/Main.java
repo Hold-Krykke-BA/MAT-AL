@@ -1,25 +1,24 @@
 package solution;
 
-import solution.sorts.InsertionSort;
-import solution.sorts.MergeSort;
-import solution.sorts.SelectionSort;
+import solution.sorts.*;
 import utils.CountComparator;
 import utils.FileUtility;
 import utils.Stopwatch;
-import solution.sorts.HeapSort;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
         try {
-            String[] shakespeare = FileUtility.toStringArray("Assignment3/src/data/shakespeare-complete-works.txt");
+            String[] shakespeare = FileUtility.toStringArray("F:\\Developer\\Softwareudvikling\\1semester\\OrganisationsRepo\\MAT-AL\\Assignment3\\src\\data\\shakespeare-complete-works.txt");
             //time("Insertion", shakespeare);
             //time("Selection", shakespeare);
             //time("Heap", shakespeare);
             //time("Merge", shakespeare);
-            //time("Trie", shakespeare);
+            time("Trie", shakespeare);
         } catch (IOException e) {
             System.out.println("File not found -> " + e.getMessage());
         }
@@ -69,7 +68,20 @@ public class Main {
                 MergeSort ms = new MergeSort();
                 ms.sort(stringCountComparator, array);
             }
-            //if (alg.equals("Trie")) //what
+            if (alg.equals("Trie")){
+                Trie trie = new Trie();
+                trie.buildTrie(array);
+//                Uncomment below to get all words printed in console
+//                Uncomment line 72, 75 and 77 in Trie to get a count
+//                of all inserted words printed in console
+
+//                System.out.println("\n\n");
+//                List<String> listWords = new ArrayList<>();
+//                trie.traverse("", listWords);
+//                for (int i = 0; i < listWords.size(); i++) {
+//                    System.out.println(listWords.get(i));
+//                }
+            }
         }
         System.out.print(" spent sorting.\n");
         System.out.printf("Comparisons: %d.", stringCountComparator.getCount());
