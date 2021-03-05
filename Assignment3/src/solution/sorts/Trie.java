@@ -64,8 +64,8 @@ public class Trie {
         }
     }
 
-    public void traverse(String word, List<String> fullWords){
-        traverse(root, word, fullWords);
+    public void traverse(List<String> fullWords){
+        traverse(root, "", fullWords);
     }
 
     public void buildTrie(String[] stringArray){
@@ -120,12 +120,6 @@ class tester {
     public static void main(String args[]) {
         Trie trie = new Trie();
         String words[] = {"elephant", "electric", "else", "end", "any", "and", "a", "by", "bye", "byte"};
-
-        // Build trie
-//        int i;
-//        for (i = 0; i < words.length ; i++){
-//            trie.insert(words[i]);
-//        }
         trie.buildTrie(words);
 
 
@@ -143,7 +137,7 @@ class tester {
         System.out.println("\n\n");
         System.out.println("***************************");
         List<String> listWords = new ArrayList<>();
-        trie.traverse("", listWords);
+        trie.traverse(listWords);
         for (int j = 0; j < listWords.size(); j++) {
             System.out.println(listWords.get(j));
         }

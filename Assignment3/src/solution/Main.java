@@ -13,7 +13,7 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
         try {
-            String[] shakespeare = FileUtility.toStringArray("Assignment3/src/data/shakespeare-complete-works.txt");
+            String[] shakespeare = FileUtility.toStringArray("src/data/shakespeare-complete-works.txt");
             //time("Insertion", shakespeare);
             //time("Selection", shakespeare);
             //time("Heap", shakespeare);
@@ -77,7 +77,7 @@ public class Main {
 
 //                System.out.println("\n\n");
 //                List<String> listWords = new ArrayList<>();
-//                trie.traverse("", listWords);
+//                trie.traverse(listWords);
 //                for (int i = 0; i < listWords.size(); i++) {
 //                    System.out.println(listWords.get(i));
 //                }
