@@ -13,7 +13,7 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
         try {
-            String[] shakespeare = FileUtility.toStringArray("F:\\Developer\\Softwareudvikling\\1semester\\OrganisationsRepo\\MAT-AL\\Assignment3\\src\\data\\shakespeare-complete-works.txt");
+            String[] shakespeare = FileUtility.toStringArray("Assignment3/src/data/shakespeare-complete-works.txt");
             //time("Insertion", shakespeare);
             //time("Selection", shakespeare);
             //time("Heap", shakespeare);
