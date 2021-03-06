@@ -232,7 +232,7 @@ Lexicographic sorting of a set of keys can be accomplished by building a trie fr
 
 #### Big O Complexity:
 * The worst case runtime for creating a trie is dependant on the amount and length of the words. This is ![equation](https://latex.codecogs.com/gif.latex?O%5Cleft%20%28%20m%20%5Ccdot%20n%20%5Cright%20%29) where `m` is the longest word, and `n` us the total number of words.
-* The time of searching depends on the length of the word `a` and the total number of words: ![equation](https://latex.codecogs.com/gif.latex?O%5Cleft%20%28a%20%5Ccdot%20n%20%5Cright%20%29)
+* The time of searching depends on the length of the word `a` and the total number `n` of words: ![equation](https://latex.codecogs.com/gif.latex?O%5Cleft%20%28a%20%5Ccdot%20n%20%5Cright%20%29)
 * The space complexity of a trie is given by the amount of words `a` and the maximum amount of characters `n`: ![equation](https://latex.codecogs.com/gif.latex?O%5Cleft%20%28a%20%5Ccdot%20n%20%5Cright%20%29)  
 
 #### Trie visiualization:
