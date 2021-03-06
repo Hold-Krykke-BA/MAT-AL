@@ -341,7 +341,11 @@ The `TrieNode` has
 * a boolean flag `isEnd`  
 and methods to `get` and `put` and additionally methods to set the flag `setEnd`, and ask what the flag is`isEnd` and if an element `containsLink` to another element.  
   
-The `Trie`  
+The `Trie` has 
+* a root `TrieNode`  
+and the methods explained below. 
+
+
 
    ```diff
   - add details about implementation
