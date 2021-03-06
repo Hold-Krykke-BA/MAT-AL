@@ -71,13 +71,14 @@ public class Main {
             if (alg.equals("Trie")){
                 Trie trie = new Trie();
                 trie.buildTrie(array);
+                List<String> listWords = new ArrayList<>();
+                trie.traverse(listWords);
+
 //                Uncomment below to get all words printed in console
 //                Uncomment line 72, 75 and 77 in Trie to get a count
 //                of all inserted words printed in console
 
 //                System.out.println("\n\n");
-//                List<String> listWords = new ArrayList<>();
-//                trie.traverse(listWords);
 //                for (int i = 0; i < listWords.size(); i++) {
 //                    System.out.println(listWords.get(i));
 //                }
