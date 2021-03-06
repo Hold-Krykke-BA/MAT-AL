@@ -27,12 +27,8 @@ program, that can
 
 ![image](https://user-images.githubusercontent.com/35559774/110207519-426aa400-7e84-11eb-8f32-c27a4e17274a.png)
 
-
-
-
-   ```diff
-  - add details (if any)
-  ```
+#### Time & Space Complexity
+Both the time complexity and the space complexity are factors to consider when choosing an algorithm. Both Time & Space Complexity can be analyzed similarly. As an example, selection sort has a space complexity of O(1), because it only stores one minimum value and an index for comparison, therefore the maximum space used does not increase with the input size.
 
 ### Selection Sort
 ![image](https://user-images.githubusercontent.com/35559774/109822906-b5330f80-7c37-11eb-9ef5-fc6a914534ea.png)
