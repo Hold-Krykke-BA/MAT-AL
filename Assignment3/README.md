@@ -230,8 +230,8 @@ Nodes in the trie do not store their associated key. Instead, a node's position 
 
 Lexicographic sorting of a set of keys can be accomplished by building a trie from them, with the children of each node sorted lexicographically, and traversing it in pre-order, printing any values in either the interior nodes or in the leaf nodes. This algorithm is a form of non-comparative sorting.
 
-####Trie visiualization:
-![image](https://user-images.githubusercontent.com/35559774/110208148-b490b800-7e87-11eb-8c63-a095fd8d8173.png)
+#### Trie visiualization:
+![image](https://user-images.githubusercontent.com/35559774/110208148-b490b800-7e87-11eb-8c63-a095fd8d8173.png)  
 Notice the `true` flag that is reached after `BE` and `BED`. If they were `false` the two words would not be complete and would not be found.  
 
 Each trie has an empty root node, with links (or references) to other nodes — one for each possible alphabetic value.
