@@ -331,6 +331,9 @@ The check basically does the same as in the while loop, setting the value from t
 array.
 
 ### Sorting using a Trie
+Since the algorithm implemented is a non-comparative algorithm, we couldn't make it fit the interface used for the four other algorithms we have implemented. Because of this, we agreed to implement it as a String Trie Sort.  
+
+The Trie consists of the `Trie` class and the `TrieNode` class, found in the same [file](https://github.com/Hold-Krykke-BA/MAT-AL/blob/main/Assignment3/src/solution/sorts/Trie.java).  
 
    ```diff
   - add details about implementation
