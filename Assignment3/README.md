@@ -335,6 +335,10 @@ Since the algorithm implemented is a non-comparative algorithm, we couldn't make
 
 The Trie consists of the `Trie` class and the `TrieNode` class, found in the same [file](https://github.com/Hold-Krykke-BA/MAT-AL/blob/main/Assignment3/src/solution/sorts/Trie.java).  
 
+The `TrieNode` has an array of `TrieNode` links, the length of the `ALPHABET`, and a boolean flag `isEnd` and methods to `get` and `put` and additionally methods to set the flag `setEnd`, and ask what the flag is`isEnd` and if an element `containsLink` to another element.  
+  
+The `Trie`  
+
    ```diff
   - add details about implementation
   ```
