@@ -225,6 +225,12 @@ As well as touches on the complexity of sorting (pg. 279 onwards) and how to cho
 [Sorts 6 Merge Sort](https://www.youtube.com/watch?v=qdv3i6X0PiQ) by RobEdwards on Youtube.
 
 ### Sorting using a Trie
+![equation](https://latex.codecogs.com/gif.latex?O%5Cleft%20%28%20m%20%5Ccdot%20n%20%5Cright%20%29)
+![equation](https://latex.codecogs.com/gif.latex?O%5Cleft%20%28a%20%5Ccdot%20n%20%5Cright%20%29)
+
+
+
+
 A trie or prefix tree, is a type of search tree used for locating specific keys (most often strings) from within a set. The keys with links between nodes are defined **not** by the entire key, but by individual characters. In order to access a key, the trie is traversed depth-first, following the links between nodes, which represent each character in the key.  
 Nodes in the trie do not store their associated key. Instead, a node's position in the trie defines the key with which it is associated. This distributes the value of each key across the data structure, and means that not every node necessarily has an associated key. All the children of a node have a common prefix of the string associated with that parent node, and the root is associated with the empty string.  
 
@@ -349,7 +355,7 @@ This section refers to the following requirement of the assignment:
 
 To time our program we utilized the provided [Stopwatch](src/utils/Stopwatch.java) class.
 
-|         | Selection Sort ![equation](https://latex.codecogs.com/gif.latex?O%5Cleft%28n%5E%7B2%7D%20%5Cright%29) | Insertion Sort ![equation](https://latex.codecogs.com/gif.latex?O%5Cleft%28n%5E%7B2%7D%20%5Cright%29)| Heap Sort ![equation](https://latex.codecogs.com/gif.latex?O%5Cleft%28n%5Clog%5Cleft%20%28%20n%20%5Cright%20%29%20%5Cright%29)| Merge Sort ![equation](https://latex.codecogs.com/gif.latex?O%5Cleft%28n%5Clog%5Cleft%20%28%20n%20%5Cright%20%29%20%5Cright%29)| Using a Trie |
+|         | Selection Sort ![equation](https://latex.codecogs.com/gif.latex?O%5Cleft%28n%5E%7B2%7D%20%5Cright%29) | Insertion Sort ![equation](https://latex.codecogs.com/gif.latex?O%5Cleft%28n%5E%7B2%7D%20%5Cright%29)| Heap Sort ![equation](https://latex.codecogs.com/gif.latex?O%5Cleft%28n%5Clog%5Cleft%20%28%20n%20%5Cright%20%29%20%5Cright%29)| Merge Sort ![equation](https://latex.codecogs.com/gif.latex?O%5Cleft%28n%5Clog%5Cleft%20%28%20n%20%5Cright%20%29%20%5Cright%29)| Using a Trie ![equation](https://latex.codecogs.com/gif.latex?O%5Cleft%20%28n%20%5Cright%20%29) |
 |:-------:|:---------------------:|:--------------------:|:-----------------:|:-------------------:|:------------:|
 |  Asger  |      NULL             |      NULL            |    NULL           |    NULL             |     NULL     |
 | Camilla |      6.443.783ms      |      9.851.730ms     |    953ms          |    678ms            |     33ms     |
