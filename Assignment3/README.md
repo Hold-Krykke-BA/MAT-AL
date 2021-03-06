@@ -25,7 +25,8 @@ program, that can
 ## Discussion
 #### Big O notation chart:  
 
-![image](https://user-images.githubusercontent.com/35559774/110207345-21ee1a00-7e83-11eb-9550-ab1e85d48307.png)
+![image](https://user-images.githubusercontent.com/35559774/110207492-194a1380-7e84-11eb-928e-274f0e5f9e5a.png)
+
 
 
    ```diff
@@ -67,7 +68,7 @@ arr[] = 64 25 12 22 11
 
 ### Insertion Sort
 ![image](https://user-images.githubusercontent.com/35559774/109822934-bc5a1d80-7c37-11eb-863c-0227b019a457.png)
-![image](https://user-images.githubusercontent.com/35559774/110207476-fddf0880-7e83-11eb-9648-3d3710c710ba.png)
+
 
 
 [Insertion sort in 2 minutes](https://www.youtube.com/watch?v=JU767SDMDvA) by Michael Sambol on Youtube.  
