@@ -67,6 +67,8 @@ arr[] = 64 25 12 22 11
 
 ### Insertion Sort
 ![image](https://user-images.githubusercontent.com/35559774/109822934-bc5a1d80-7c37-11eb-863c-0227b019a457.png)
+![image](https://user-images.githubusercontent.com/35559774/110207476-fddf0880-7e83-11eb-9648-3d3710c710ba.png)
+
 
 [Insertion sort in 2 minutes](https://www.youtube.com/watch?v=JU767SDMDvA) by Michael Sambol on Youtube.  
 [Insertion Sort Algorithm Made Simple [Sorting Algorithms]](https://www.youtube.com/watch?v=nKzEJWbkPbQ) by Programming
