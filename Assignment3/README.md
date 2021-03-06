@@ -25,7 +25,8 @@ program, that can
 ## Discussion
 #### Big O notation chart:  
 
-![image](https://user-images.githubusercontent.com/35559774/109824290-fa0b7600-7c38-11eb-9d32-478c9fa2011f.png)
+![image](https://user-images.githubusercontent.com/35559774/110207345-21ee1a00-7e83-11eb-9550-ab1e85d48307.png)
+
 
    ```diff
   - add details (if any)
