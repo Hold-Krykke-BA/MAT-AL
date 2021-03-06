@@ -23,9 +23,10 @@ program, that can
   The solution accompanied with a description in a README.md file should be uploaded (pushed) to a git repository.
 
 ## Discussion
-#### Big O notation chart:  
+#### Big O Complexity Chart:  
 
-![image](https://user-images.githubusercontent.com/35559774/110207492-194a1380-7e84-11eb-928e-274f0e5f9e5a.png)
+![image](https://user-images.githubusercontent.com/35559774/110207519-426aa400-7e84-11eb-8f32-c27a4e17274a.png)
+
 
 
 
