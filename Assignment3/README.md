@@ -225,16 +225,15 @@ As well as touches on the complexity of sorting (pg. 279 onwards) and how to cho
 [Sorts 6 Merge Sort](https://www.youtube.com/watch?v=qdv3i6X0PiQ) by RobEdwards on Youtube.
 
 ### Sorting using a Trie
-![equation](https://latex.codecogs.com/gif.latex?O%5Cleft%20%28%20m%20%5Ccdot%20n%20%5Cright%20%29)
-![equation](https://latex.codecogs.com/gif.latex?O%5Cleft%20%28a%20%5Ccdot%20n%20%5Cright%20%29)
-
-
-
-
 A trie or prefix tree, is a type of search tree used for locating specific keys (most often strings) from within a set. The keys with links between nodes are defined **not** by the entire key, but by individual characters. In order to access a key, the trie is traversed depth-first, following the links between nodes, which represent each character in the key.  
 Nodes in the trie do not store their associated key. Instead, a node's position in the trie defines the key with which it is associated. This distributes the value of each key across the data structure, and means that not every node necessarily has an associated key. All the children of a node have a common prefix of the string associated with that parent node, and the root is associated with the empty string.  
 
 Lexicographic sorting of a set of keys can be accomplished by building a trie from them, with the children of each node sorted lexicographically, and traversing it in pre-order, printing any values in either the interior nodes or in the leaf nodes. This algorithm is a form of non-comparative sorting.
+
+#### Big O Complexity:
+* The worst case runtime for creating a trie is dependant on the amount and length of the words. This is ![equation](https://latex.codecogs.com/gif.latex?O%5Cleft%20%28%20m%20%5Ccdot%20n%20%5Cright%20%29) where `m` is the longest word, and `n` us the total number of words.
+* The time of searching depends on the length of the word `a` and the total number of words: ![equation](https://latex.codecogs.com/gif.latex?O%5Cleft%20%28a%20%5Ccdot%20n%20%5Cright%20%29)
+* The space complexity of a trie is given by the amount of words `a` and the maximum amount of characters `n`: ![equation](https://latex.codecogs.com/gif.latex?O%5Cleft%20%28a%20%5Ccdot%20n%20%5Cright%20%29)  
 
 #### Trie visiualization:
 ![image](https://user-images.githubusercontent.com/35559774/110209721-413e7480-7e8e-11eb-8374-af09c46af0ec.png)  
