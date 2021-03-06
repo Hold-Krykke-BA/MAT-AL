@@ -225,11 +225,21 @@ As well as touches on the complexity of sorting (pg. 279 onwards) and how to cho
 [Sorts 6 Merge Sort](https://www.youtube.com/watch?v=qdv3i6X0PiQ) by RobEdwards on Youtube.
 
 ### Sorting using a Trie
+A trie or prefix tree, is a type of search tree used for locating specific keys (most often strings) from within a set. The keys with links between nodes are defined **not** by the entire key, but by individual characters. In order to access a key, the trie is traversed depth-first, following the links between nodes, which represent each character in the key.  
+Nodes in the trie do not store their associated key. Instead, a node's position in the trie defines the key with which it is associated. This distributes the value of each key across the data structure, and means that not every node necessarily has an associated key. All the children of a node have a common prefix of the string associated with that parent node, and the root is associated with the empty string.  
 
-   ```diff
-  - add details 
-  ```
+Lexicographic sorting of a set of keys can be accomplished by building a trie from them, with the children of each node sorted lexicographically, and traversing it in pre-order, printing any values in either the interior nodes or in the leaf nodes. This algorithm is a form of non-comparative sorting.
 
+####Trie visiualization:
+![image](https://user-images.githubusercontent.com/35559774/110208148-b490b800-7e87-11eb-8c63-a095fd8d8173.png)
+Notice the `true` flag that is reached after `BE` and `BED`. If they were `false` the two words would not be complete and would not be found.  
+
+Each trie has an empty root node, with links (or references) to other nodes — one for each possible alphabetic value.
+
+[Lecture notes from other school on Tries](https://www.cs.cmu.edu/~fp/courses/15122-f10/lectures/18-tries.pdf)
+[Algorithms, 4. edition, 5.2, Tries](https://algs4.cs.princeton.edu/52trie/)
+[Wikipedia, Trie](https://en.wikipedia.org/wiki/Trie)
+[Wikipedia, Radix Sort (non-comparative)](https://en.wikipedia.org/wiki/Radix_sort)
 ## Description of solution
 
 #### Folder structure
