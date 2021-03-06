@@ -338,7 +338,7 @@ The Trie consists of the `Trie` class and the `TrieNode` class, found in the sam
 The `TrieNode` has 
 * an array of `TrieNode` links
 * the length of the `ALPHABET`
-* a boolean flag `isEnd` 
+* a boolean flag `isEnd`  
 and methods to `get` and `put` and additionally methods to set the flag `setEnd`, and ask what the flag is`isEnd` and if an element `containsLink` to another element.  
   
 The `Trie`  
