@@ -344,12 +344,15 @@ and methods to `get` and `put` and additionally methods to set the flag `setEnd`
 The `Trie` has 
 * a root `TrieNode`  
 and the methods explained below. 
+  
+* Inserting words into the Trie using `buildTrie(String[] stringArray)`:
+  * `insert(String word)` loops over each word feed from `buildTrie`, looking from the `root node` for each word. The loop looks at weather or not there is a link to the current `char` and if not, a new `node` (link) is created. The root is changed to the new `node` and all subsequent links are created the same way.   
+* Searching the Trie using `search(String word)` and `startsWith(String prefix)`:
+  * `searchPrefix(String word)` loops over each word feed from either of the methods calling it, looking from the `root node` for each word or prefix. The loop checks if there is a link to from the current `node` to the current `char` and sets the `node` to the next node if any. The to methods calling `searchPrefix` returns a boolean value depending on weather the returned `node` is `!=null` (`startsWith`) or if the returned `node` is `!=null` and is an leaf node (`search`).  
+* Traversing the Trie using `traverse(List<String> fullWords)`:
+  * `traverse(TrieNode node, String word, List<String> fullWords)`
 
 
-
-   ```diff
-  - add details about implementation
-  ```
 
 ### Future usability
 
