@@ -350,8 +350,7 @@ and the methods explained below.
 * Searching the Trie using `search(String word)` and `startsWith(String prefix)`:
   * `searchPrefix(String word)` loops over each word feed from either of the methods calling it, looking from the `root node` for each word or prefix. The loop checks if there is a link to from the current `node` to the current `char` and sets the `node` to the next node if any. The to methods calling `searchPrefix` returns a boolean value depending on weather the returned `node` is `!=null` (`startsWith`) or if the returned `node` is `!=null` and is an leaf node (`search`).  
 * Traversing the Trie using `traverse(List<String> fullWords)`:
-  * `traverse(TrieNode node, String word, List<String> fullWords)`
-
+  * `traverse(TrieNode node, String word, List<String> fullWords)` adds a word to the given `List<String>` if a `node` is a leaf. Starting from the given `root node` the loop looks at the 26 possible links (indexes) and builds the `String temp` with each `char` (translated from index to ascii). If the `node` doesn't contain a link we skip to the next. If the `node` contains a link, `traverse` is called again with the next node and the updated `string temp`. This ends up recursively looking through all the possible letter combinations and in the end the `List<String>` with all the words contained in the `Trie` is returned.  
 
 
 ### Future usability
