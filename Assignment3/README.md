@@ -236,6 +236,8 @@ Lexicographic sorting of a set of keys can be accomplished by building a trie fr
 * The space complexity of a trie is given by the amount of words `a` and the maximum amount of characters `n`: ![equation](https://latex.codecogs.com/gif.latex?O%5Cleft%20%28a%20%5Ccdot%20n%20%5Cright%20%29)  
 
 #### Trie visiualization:
+![image](https://user-images.githubusercontent.com/35559774/110250629-935dc380-7f7c-11eb-9b67-1462d2c76bcc.png)
+
 ![image](https://user-images.githubusercontent.com/35559774/110209721-413e7480-7e8e-11eb-8374-af09c46af0ec.png)  
 Notice the `true` flag that is reached after `BE` and `BED`. If they were `false` the two words would not be complete and would not be found.  
 
