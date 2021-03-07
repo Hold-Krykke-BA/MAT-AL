@@ -237,8 +237,6 @@ Lexicographic sorting of a set of keys can be accomplished by building a trie fr
 
 #### Trie visiualization:
 ![image](https://user-images.githubusercontent.com/35559774/110250629-935dc380-7f7c-11eb-9b67-1462d2c76bcc.png)
-
-![image](https://user-images.githubusercontent.com/35559774/110209721-413e7480-7e8e-11eb-8374-af09c46af0ec.png)  
 Notice the `true` flag that is reached after `BE` and `BED`. If they were `false` the two words would not be complete and would not be found.  
 
 Each trie has an empty root node, with links (or references) to other nodes — one for each possible alphabetic value. The value stored in each array is not a letter, but the reference to further nodes. All of the elements in the arrays either have a reference (link) to another node or `null` stored. Each node have a boolean flag to indicate if it's a leaf node for a specific word (but can both be a leaf node for one word and just another normal node in another (see `BE` and `BED` in above picture)) and an array for each of the possible new references.  
