@@ -182,7 +182,7 @@ The chapter goes into detail of the different variations of Merge Sort:
 
 It is important to notice how this approach creates only one *auxiliary* array, copying values from `[low..mid..high]`.  
 This chapter shortly touches on the issue of using this variation on large arrays, where the cost of creating temporary
-arrays gets exponentially worse.
+arrays gets exponentially worse. For this method in particular, memory may be an issue due to creating a 1:1 copy of the array, taking up twice the memory size.
 
 - #### Top-down mergesort (pg. 272)
 > *(...) is a recursive
