@@ -373,7 +373,7 @@ To time our program we utilized the provided [Stopwatch](src/utils/Stopwatch.jav
 |:-------:|:---------------------:|:--------------------:|:-----------------:|:-------------------:|:------------:|
 |  Asger  |      NULL             |      NULL            |    NULL           |    NULL             |     NULL     |
 | Camilla |      6.443.783ms      |      9.851.730ms     |    953ms          |    678ms            |     33ms     |
-|   Rúni  |      NULL             |      NULL            |    1532ms           |    1095ms           |     NULL     |
+|   Rúni  |      NULL             |      NULL            |    1532ms           |    1095ms         |     179ms    |
 
 ## References
 
