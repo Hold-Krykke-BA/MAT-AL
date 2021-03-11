@@ -24,3 +24,4 @@
   ```diff
   - add details (if any)
   ```
+Alternative implementation: https://github.com/mehrab-haque/tower-of-hanoi-java/blob/master/src/Hanoi.java
