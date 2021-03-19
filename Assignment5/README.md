@@ -6,6 +6,7 @@ https://datsoftlyngby.github.io/soft2021spring/resources/4a48310c-04-assignment-
 
 
 ## Create a dynamic analyser
+Using the provided log entries, we decided to creater a system with the following layout:  
 
 - A Login
   - B List items
@@ -15,9 +16,10 @@ https://datsoftlyngby.github.io/soft2021spring/resources/4a48310c-04-assignment-
   - F Insert item
 - G Logout
 
+We discussed if `C` should be a state of its own, leading to D and E but ultimately decided on the above setup.
+
 `AB(C(D|E))|F*G`
 
-Using the provided log entries, we decided to creater a system with the following layout:  
 |   | Login | List Items | Get Item | Edit Item | Delete Item | Insert Item | Logout |
 |:-:|:-----:|:----------:|:--------:|:---------:|:-----------:|:-----------:|:------:|
 |   |   A   |      B     |     C    |     D     |      E      |      F      |    G   |
@@ -27,6 +29,8 @@ Using the provided log entries, we decided to creater a system with the followin
 | 3 |   5   |      5     |     5    |     2     |      2      |      5      |    5   |
 | 4 |   5   |      5     |     5    |     5     |      5      |      5      |    5   |
 | 5 |       |            |          |           |             |             |        |
+
+*Where **5** is END/ERROR.*
 
 ```diff
 - todo, add more details, implementation
