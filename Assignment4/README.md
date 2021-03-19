@@ -24,4 +24,5 @@
   ```diff
   - add details (if any)
   ```
-Alternative implementation: https://github.com/mehrab-haque/tower-of-hanoi-java/blob/master/src/Hanoi.java
+Alternative implementation: https://github.com/mehrab-haque/tower-of-hanoi-java/blob/master/src/Hanoi.java  
+Video walkthrough (Python): https://www.youtube.com/watch?v=UR1lOWMvAIA
