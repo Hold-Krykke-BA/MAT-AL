@@ -36,7 +36,7 @@ We discussed if `C` should be a state of its own, leading to D and E but ultimat
 - todo, add more details, implementation
 ```
 
-##Create a finite state generator
+## Create a finite state generator
 ```diff
 - todo
 ```
