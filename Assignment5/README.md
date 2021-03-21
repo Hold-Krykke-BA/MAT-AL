@@ -40,7 +40,19 @@ Everything is combined in [src/Main.java](src/Main.java) where the required task
 The utility Reader reads our log files from logfile.txt and returns a HashMap of the values needed for the automaton.  
 The automaton implementation is built specifically for our alphabet as discussed above.  
 
-<details><summary>Program output (click)</summary>
+Our [logfile](src/data/logfile.txt) holds the following summarized values:  
+|    Level    | SystemID | InstanceID |  ActionID  | Timestamp |
+|:-----------:|:--------:|:----------:|:----------:|:---------:|
+| Information |    23    |    12345   | A, B, F, G |   23:00   |
+| Information |    23    |    32512   | A, B, G, F |   23:00   |
+| Information |    23    |    41231   |   A, F, F  |   23:00   |  
+
+Or, in other words:  
+`12345`: Login -> List Items -> Insert Item -> Logout.  
+`32512`: Login -> List Items -> Logout -> Insert Item. (!)  
+`41231`: Login -> Insert Item -> Insert Item.  
+
+<details><summary>Program output (click to reveal)</summary>
 <p>
 
 ```java
@@ -82,15 +94,16 @@ Instance ID: 41231 //never logged out
 #### Assignment tasks
 
 - is the action legal according to the present state.  
-  For this task we implemented the `Ok(state, action)` method as discussed in class, basically converting the result of the interface method `nextState(state, action)` to a boolean value.
+  For this task [we implemented the `Ok(state, action)` method](https://github.com/Hold-Krykke-BA/MAT-AL/blob/main/Assignment5/src/Main.java#L31-L41) as discussed in class, basically converting the result of the interface method `nextState(state, action)` to a boolean value. 
   `nextState` looks at the current table implementation and determines if the Action (which is a char) is allowed within the State context.  
    ```diff
    - todo example with ascii values?
    ```
 
 - is any instance stuck at a non-final (non-accepting) state.  
-  We found this a bit difficult to implement, as there weren't any hints to what such a state was - and we found it comparable to the third task.
-- give a list of the running instances.
+  We found this a bit difficult to implement, as there weren't any hints to what such a state was - and we found it comparable to the third task.  
+- give a list of the running instances.  
+We [implemented a solution](https://github.com/Hold-Krykke-BA/MAT-AL/blob/main/Assignment5/src/Main.java#L44-L57) where we checked if the log had any record of the `G` (logout) action and returned those who had not.
 
 
 ## Create a Finite State Generator
