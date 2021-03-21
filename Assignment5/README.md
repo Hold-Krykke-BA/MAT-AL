@@ -11,14 +11,15 @@ Using the provided log entries, we decided to creater a system with the followin
 - A Login
   - B List items
     - C Get item
-    -  D Edit item
-    -  E Delete item
+      -  D Edit item
+      -  E Delete item
+    - F Insert item
   - F Insert item
 - G Logout
 
 We discussed if `C` should be a state of its own, leading to D and E but ultimately decided on the above setup.
 
-`AB(C(D|E))|F*G`
+`AB(C(D|E)F)|F*G`
 
 |   | Login | List Items | Get Item | Edit Item | Delete Item | Insert Item | Logout |
 |:-:|:-----:|:----------:|:--------:|:---------:|:-----------:|:-----------:|:------:|
@@ -29,13 +30,4 @@ We discussed if `C` should be a state of its own, leading to D and E but ultimat
 | 3 |   null   |      null     |     null    |     2     |      2      |      null      |    null   |
 | 4 |   null   |      null     |     null    |     null     |      null      |      null      |    null   |
 
-*Where **5** is END/ERROR.*
-
-```diff
-- todo, add more details, implementation
-```
-
-## Create a finite state generator
-```diff
-- todo
-```
+*Where **4** is END of the session.*
