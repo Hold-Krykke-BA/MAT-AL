@@ -23,11 +23,11 @@ We discussed if `C` should be a state of its own, leading to D and E but ultimat
 |   | Login | List Items | Get Item | Edit Item | Delete Item | Insert Item | Logout |
 |:-:|:-----:|:----------:|:--------:|:---------:|:-----------:|:-----------:|:------:|
 |   |   A   |      B     |     C    |     D     |      E      |      F      |    G   |
-| 0 |   1   |      5     |     5    |     5     |      5      |      5      |    5   |
-| 1 |   5   |      2     |     5    |     5     |      5      |      1      |    4   |
-| 2 |   5   |      5     |     3    |     5     |      5      |      5      |    4   |
-| 3 |   5   |      5     |     5    |     2     |      2      |      5      |    5   |
-| 4 |   5   |      5     |     5    |     5     |      5      |      5      |    5   |
+| 0 |   1   |      null  |     null    |     null     |      null      |      null      |    null   |
+| 1 |   null   |      2     |     null    |     null     |      null      |      1      |    4   |
+| 2 |   null   |      null     |     3    |     null     |      null      |      2      |    4   |
+| 3 |   null   |      null     |     null    |     2     |      2      |      null      |    null   |
+| 4 |   null   |      null     |     null    |     null     |      null      |      null      |    null   |
 | 5 |       |            |          |           |             |             |        |
 
 *Where **5** is END/ERROR.*
