@@ -28,7 +28,6 @@ We discussed if `C` should be a state of its own, leading to D and E but ultimat
 | 2 |   null   |      null     |     3    |     null     |      null      |      2      |    4   |
 | 3 |   null   |      null     |     null    |     2     |      2      |      null      |    null   |
 | 4 |   null   |      null     |     null    |     null     |      null      |      null      |    null   |
-| 5 |    null   |    null        |    null      |      null     |    null         |   null          | null       |
 
 *Where **5** is END/ERROR.*
 
