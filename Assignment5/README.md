@@ -52,7 +52,7 @@ Or, in other words:
 `32512`: Login -> List Items -> Logout -> Insert Item. (!)  
 `41231`: Login -> Insert Item -> Insert Item.  
 
-<details><summary>Program output (click to reveal)</summary>
+<details><summary>Program output <b>(click to reveal)</b></summary>
 <p>
 
 ```java
