@@ -5,6 +5,12 @@ import interfaces.IState;
 import java.util.List;
 
 public class Automaton implements IAutomaton {
+    // Accept decoded alphabet (rules)?
+    // Accept grouped logfiles
+    // determine
+        // is the action legal according to the present state
+        // is any instance stuck at a non-final (non-accepting) state
+        // give a list of the running instances
 
 
 
