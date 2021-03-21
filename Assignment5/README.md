@@ -33,6 +33,6 @@ We discussed if `C` should be a state of its own, leading to D and E but ultimat
 *Where **4** is END of the session.*
 
 ## Assignment tasks
-• is the action legal according to the present state.
-• is any instance stuck at a non-final (non-accepting) state.
-• give a list of the running instances.
+- is the action legal according to the present state.
+- is any instance stuck at a non-final (non-accepting) state.
+- give a list of the running instances.
