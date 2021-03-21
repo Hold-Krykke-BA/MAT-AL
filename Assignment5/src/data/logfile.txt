@@ -1,0 +1,11 @@
+Information,23,12345,A,23:00
+Information,23,12345,B,23:00
+Information,23,12345,F,23:00
+Information,23,32512,A,23:00
+Information,23,32512,B,23:00
+Information,23,12345,G,23:00
+Information,23,32512,G,23:00
+Information,23,32512,F,23:00
+Information,23,41231,A,23:00
+Information,23,41231,F,23:00
+Information,23,41231,F,23:00
