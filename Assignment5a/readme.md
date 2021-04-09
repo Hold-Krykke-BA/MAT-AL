@@ -1,7 +1,7 @@
 # Assignment 5a
 
 ## Assignment description
-See [bd35484e-05a-assignment.pdf](/bd35484e-05a-assignment.pdf)
+See [bd35484e-05a-assignment.pdf](bd35484e-05a-assignment.pdf)
 
 ## Implementation
 ```diff
