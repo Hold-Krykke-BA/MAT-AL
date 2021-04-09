@@ -63,7 +63,7 @@ Rúni:
 ## Solution
 See the solution in [Main.java](src/Main.java). Interfaces and classes can be found in their respective folders.
 
-In practice we followed the start code provided by Anders, implemented Conjunction and went from there.
+In practice we followed the start code provided by Anders, implemented Conjunction and went from there. We didn't actually follow much of what was discussed, but it pointed us in the right direction.
 ```diff
 - todo
 ```
