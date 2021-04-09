@@ -3,7 +3,8 @@
 ## Assignment description
 See [bd35484e-05a-assignment.pdf](bd35484e-05a-assignment.pdf)
 
-## Implementation
+## Solution
+See the solution in [Main.java](src/Main.java). Interfaces and classes can be found in their respective folders.
 ```diff
 - todo
 ```
