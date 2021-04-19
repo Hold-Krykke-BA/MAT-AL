@@ -4,6 +4,10 @@ import interfaces.Stack;
 
 import java.util.EmptyStackException;
 
+/**
+ * Stack is a LIFO (Last in, first out) data structure ...
+ * @param <T>
+ */
 public class StackImpl<T> implements Stack<T> {
     private int capacity;
     private T[] stackArray;
@@ -21,7 +25,7 @@ public class StackImpl<T> implements Stack<T> {
             System.out.println("Stack Overflow - increasing capacity");
             this.increaseCapacity();
         }
-        this.stackArray[++stackTop] = item;
+        this.stackArray[++stackTop] = item; //increment stackTop, add item to front of array
     }
 
     @Override
@@ -29,12 +33,12 @@ public class StackImpl<T> implements Stack<T> {
         if (this.isEmpty()) {
             throw new EmptyStackException();
         }
-        return this.stackArray[stackTop--];
+        return this.stackArray[stackTop--]; //return element at front, decrement stackTop
     }
 
     @Override
     public T peek() {
-        return stackArray[stackTop];
+        return stackArray[stackTop]; //return element at front
     }
 
     @Override
@@ -47,6 +51,9 @@ public class StackImpl<T> implements Stack<T> {
         return (stackTop == capacity - 1);
     }
 
+    /**
+     * Creates a new stackArray at double the size of the original stackArray.
+     */
     private void increaseCapacity() {
         T[] newStack = (T[]) new Object[this.capacity * 2];
         for (int i = 0; i < capacity; i++) {
