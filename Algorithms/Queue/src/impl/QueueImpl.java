@@ -29,9 +29,9 @@ public class QueueImpl<T> implements Queue<T> {
     @Override
     public T pop() throws Exception {
         if (isEmpty()) throw new Exception("Queue is empty");
-        Node result = front;
-        front = front.next;
-        return result.data;
+        Node result = front; //save current front
+        front = front.next; //set new front
+        return result.data; //return "old" (current) front
     }
 
     @Override
