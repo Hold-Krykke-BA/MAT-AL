@@ -8,7 +8,7 @@ import java.util.*;
 // MST is the least heavy tree connecting all vertices in a non-cyclic graph
 public class PrimMST {
 
-    private double totalMSTweight;
+    private double totalMSTweight; // not used (yet?) might be useful?
     private QueueImpl<Edge> mst;
     private boolean[] markedVertices;
     private PriorityQueue<Edge> pq;
@@ -25,8 +25,9 @@ public class PrimMST {
             int v = lowestWeightEdge.either(), w = lowestWeightEdge.other(v);
             if (markedVertices[v] && markedVertices[w]) continue; // Skip if both are included
             mst.push(lowestWeightEdge); // Add edge to minimum spanning tree.
-            if (!markedVertices[v]) visit(graph, v); // Add vertex to tree
-            if (!markedVertices[w]) visit(graph, w); // (either v or w).
+            // recursively visit the neighbouring vertices
+            if (!markedVertices[v]) visit(graph, v);
+            if (!markedVertices[w]) visit(graph, w);
         }
     }
 
