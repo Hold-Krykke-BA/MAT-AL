@@ -1,9 +1,9 @@
-package Graphs.Impl;
+package Graphs.Undirected.Impl;
 
 
-import Graphs.interfaces.Graph;
-import Graphs.interfaces.GraphBuilder;
-import Graphs.interfaces.GraphFactory;
+import Graphs.Undirected.interfaces.Graph;
+import Graphs.Undirected.interfaces.GraphBuilder;
+import Graphs.Undirected.interfaces.GraphFactory;
 
 import java.io.*;
 

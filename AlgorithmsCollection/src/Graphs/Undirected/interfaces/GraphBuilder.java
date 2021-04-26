@@ -1,4 +1,4 @@
-package Graphs.interfaces;
+package Graphs.Undirected.interfaces;
 
 public interface GraphBuilder {
     void addEdge(int v1, int v2, float weight);

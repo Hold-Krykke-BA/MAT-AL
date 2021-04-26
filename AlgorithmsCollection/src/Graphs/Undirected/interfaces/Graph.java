@@ -1,4 +1,4 @@
-package Graphs.interfaces;
+package Graphs.Undirected.interfaces;
 
 public interface Graph {
     int V(); //vertex

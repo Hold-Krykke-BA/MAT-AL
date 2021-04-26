@@ -1,4 +1,4 @@
-package Graphs.interfaces;
+package Graphs.Undirected.interfaces;
 
 import java.io.IOException;
 

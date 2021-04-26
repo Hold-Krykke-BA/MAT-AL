@@ -1,4 +1,4 @@
-package Graphs.interfaces;
+package Graphs.Undirected.interfaces;
 
 //Weighted
 public interface Edge extends Comparable<Edge>{

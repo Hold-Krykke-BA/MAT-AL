@@ -1,9 +1,9 @@
-package Graphs.Impl;
+package Graphs.Undirected.Impl;
 
 
-import Graphs.interfaces.Edge;
-import Graphs.interfaces.Graph;
-import Graphs.interfaces.GraphBuilder;
+import Graphs.Undirected.interfaces.Edge;
+import Graphs.Undirected.interfaces.Graph;
+import Graphs.Undirected.interfaces.GraphBuilder;
 
 import java.util.ArrayList;
 
