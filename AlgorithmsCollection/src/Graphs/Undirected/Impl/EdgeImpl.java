@@ -1,6 +1,6 @@
 package Graphs.Undirected.Impl;
 
-import Graphs.Undirected.interfaces.Edge;
+import Graphs.Undirected.Interfaces.Edge;
 
 public class EdgeImpl implements Edge {
 
