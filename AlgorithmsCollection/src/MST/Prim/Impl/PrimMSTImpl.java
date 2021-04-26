@@ -1,19 +1,21 @@
-package src.impl;
+package MST.Prim.Impl;
 
-import impl.QueueImpl;
-import interfaces.Edge;
-import interfaces.Graph;
-import java.util.*;
+import Datastructures.Queues.Simple.Impl.QueueImpl;
+import Graphs.Undirected.Interfaces.Edge;
+import Graphs.Undirected.Interfaces.Graph;
+
+import java.util.ArrayList;
+import java.util.PriorityQueue;
 
 // MST is the least heavy tree connecting all vertices in a non-cyclic graph
-public class PrimMST {
+public class PrimMSTImpl {
 
     private double totalMSTweight; // not used (yet?) might be useful?
     private QueueImpl<Edge> mst;
     private boolean[] markedVertices;
     private PriorityQueue<Edge> pq;
 
-    public PrimMST(Graph graph){
+    public PrimMSTImpl(Graph graph){
         pq = new PriorityQueue<Edge>();
         markedVertices = new boolean[graph.V()];
         mst = new QueueImpl<Edge>();

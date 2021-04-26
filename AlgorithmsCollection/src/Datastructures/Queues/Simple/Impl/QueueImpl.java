@@ -1,6 +1,7 @@
-package impl;
+package Datastructures.Queues.Simple.Impl;
 
-import interfaces.Queue;
+
+import Datastructures.Queues.Simple.Interfaces.Queue;
 
 public class QueueImpl<T> implements Queue<T> {
     class Node {

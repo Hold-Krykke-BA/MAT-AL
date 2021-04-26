@@ -1,4 +1,4 @@
-package interfaces;
+package Datastructures.Queues.Simple.Interfaces;
 
 public interface Queue<T> {
     boolean isEmpty();

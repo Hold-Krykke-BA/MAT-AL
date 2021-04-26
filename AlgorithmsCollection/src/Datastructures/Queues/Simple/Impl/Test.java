@@ -1,4 +1,4 @@
-package impl;
+package Datastructures.Queues.Simple.Impl;
 
 public class Test {
 

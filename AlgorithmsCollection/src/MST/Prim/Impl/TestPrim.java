@@ -1,9 +1,9 @@
-package src.impl;
+package MST.Prim.Impl;
 
-import Impl.GraphFactoryImpl;
-import interfaces.Edge;
-import interfaces.Graph;
-import interfaces.GraphFactory;
+import Graphs.Undirected.Impl.GraphFactoryImpl;
+import Graphs.Undirected.Interfaces.Edge;
+import Graphs.Undirected.Interfaces.Graph;
+import Graphs.Undirected.Interfaces.GraphFactory;
 
 import java.io.IOException;
 
@@ -14,7 +14,7 @@ public class TestPrim {
         System.out.println("Graph from graph1.txt:\n" + graph);
         System.out.println("Prim Result:");
 
-        PrimMST pmst = new PrimMST(graph);
+        PrimMSTImpl pmst = new PrimMSTImpl(graph);
         for (Edge e : pmst.edges()){
             System.out.println("weight: " + e.weight());;
         }
