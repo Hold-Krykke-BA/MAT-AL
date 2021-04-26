@@ -10,7 +10,7 @@ import java.io.IOException;
 public class TestPrim {
     public static void main(String[] args) throws IOException {
         GraphFactory factory = new GraphFactoryImpl();
-        Graph graph = factory.readFromFile("F:\\Developer\\Softwareudvikling\\1semester\\OrganisationsRepo\\MAT-AL\\Algorithms\\UndirectedWeightedGraph\\src\\Impl\\graph1.txt");
+        Graph graph = factory.readFromFile("src/Textfiles/graph1.txt");
         System.out.println("Graph from graph1.txt:\n" + graph);
         System.out.println("Prim Result:");
 
