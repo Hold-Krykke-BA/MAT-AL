@@ -247,10 +247,6 @@ public class MinPriorityQueueImpl<T> implements MinPriorityQueue<T>, Iterable<T>
                 copy.insert(pq[i]);
         }
 
-        public MinPriorityQueueImpl<T> getCopy() {
-            return (MinPriorityQueueImpl<T>) copy;
-        }
-
         public boolean hasNext() {
             return !copy.isEmpty();
         }
