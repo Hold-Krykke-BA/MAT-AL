@@ -13,6 +13,7 @@ public class SpDijkstraImpl {
     int[] pathArr;
     boolean[] visitedArr;
     PriorityQueue pq = new PriorityQueue(new WeightComparator());
+    ArrayList<Integer> shortestPathArr = new ArrayList<>();
 
     public SpDijkstraImpl(DirectedGraph directedGraph, int source) {
         weightArr = new float[directedGraph.V()];
@@ -42,27 +43,27 @@ public class SpDijkstraImpl {
         }
     }
 
-    public String path(int to, ArrayList<Integer> pathArr) {
-        if (this.pathArr[to] == -1) {
+    public String path(int to) {
+        if (pathArr[to] == -1) {
             StringBuilder builder = new StringBuilder();
-            builder.append("Shortest path to " + pathArr.get(0) + "\n");
-            for(int i = pathArr.size()-1; i >= 0; i--) {
+            builder.append("Shortest path to " + shortestPathArr.get(0) + "\n");
+            for(int i = shortestPathArr.size()-1; i >= 0; i--) {
                 if (i == 0) {
-                    builder.append(pathArr.get(i));
+                    builder.append(shortestPathArr.get(i));
                 } else {
-                    builder.append(pathArr.get(i) + " -> ");
+                    builder.append(shortestPathArr.get(i) + " -> ");
                 }
             }
             return builder.toString();
         }
-        if (pathArr == null) {
-            pathArr = new ArrayList<>();
+        if (shortestPathArr == null) {
+            shortestPathArr = new ArrayList<>();
         }
-        if (pathArr.isEmpty()) {
-            pathArr.add(to);
+        if (shortestPathArr.isEmpty()) {
+            shortestPathArr.add(to);
         }
-        pathArr.add(this.pathArr[to]);
-        return path(this.pathArr[to], pathArr);
+        shortestPathArr.add(pathArr[to]);
+        return path(pathArr[to]);
     }
 
     @Override
