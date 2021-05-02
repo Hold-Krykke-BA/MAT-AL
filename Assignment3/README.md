@@ -372,7 +372,7 @@ To time our program we utilized the provided [Stopwatch](src/utils/Stopwatch.jav
 |         | Selection Sort ![equation](https://latex.codecogs.com/gif.latex?O%5Cleft%28n%5E%7B2%7D%20%5Cright%29) | Insertion Sort ![equation](https://latex.codecogs.com/gif.latex?O%5Cleft%28n%5E%7B2%7D%20%5Cright%29)| Heap Sort ![equation](https://latex.codecogs.com/gif.latex?O%5Cleft%28n%5Clog%5Cleft%20%28%20n%20%5Cright%20%29%20%5Cright%29)| Merge Sort ![equation](https://latex.codecogs.com/gif.latex?O%5Cleft%28n%5Clog%5Cleft%20%28%20n%20%5Cright%20%29%20%5Cright%29)| Using a Trie ![equation](https://latex.codecogs.com/gif.latex?O%5Cleft%20%28n%20%5Cright%20%29) |
 |:-------:|:---------------------:|:--------------------:|:-----------------:|:-------------------:|:------------:|
 |  Asger  |      NULL             |      NULL            |    NULL           |    NULL             |     NULL     |
-| Camilla |      6.443.783ms      |      9.851.730ms     |    953ms          |    678ms            |     33ms     |
+| Camilla |      6.443.783ms      |      9.851.730ms     |    937ms          |    654ms            |     87ms     |
 |   Rúni  |      NULL             |      NULL            |    1532ms           |    1095ms         |     179ms    |
 
 ## References
