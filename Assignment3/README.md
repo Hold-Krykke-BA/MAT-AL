@@ -77,7 +77,7 @@ Details about implementation of Selection Sort can be found here:
 * [Geeks for Geeks Implementation](https://www.geeksforgeeks.org/insertion-sort/)
 
 #### Explanation
-Insertion Sort iterate through the array starting at index 1, it then compare the current element to the elements infront of it in the array. When it finds am element that is lower than it self it stops and increament the index of all the elements it compared to before by 1, then it moves it self to the position after the lower element.
+Insertion Sort iterate through the array starting at index 1, it then compare the current element to the elements infront of it in the array. When it finds an element that is lower than it self it stops and increament the index of all the elements it compared to before by 1, then it moves it self to the position after the lower element.
 The time complexity will for the most part be ![CodeCogsEqn](https://user-images.githubusercontent.com/21987376/109980247-f8f14c00-7cff-11eb-8189-f9eb40acb994.gif), however if its sorting an already sorted array the time complexity will instead be ![CodeCogsEqn (1)](https://user-images.githubusercontent.com/21987376/109989568-e7f90880-7d08-11eb-8770-a5f4349c81a3.gif).
 
 ![image](https://media.geeksforgeeks.org/wp-content/uploads/insertionsort.png)
@@ -372,7 +372,7 @@ To time our program we utilized the provided [Stopwatch](src/utils/Stopwatch.jav
 |         | Selection Sort ![equation](https://latex.codecogs.com/gif.latex?O%5Cleft%28n%5E%7B2%7D%20%5Cright%29) | Insertion Sort ![equation](https://latex.codecogs.com/gif.latex?O%5Cleft%28n%5E%7B2%7D%20%5Cright%29)| Heap Sort ![equation](https://latex.codecogs.com/gif.latex?O%5Cleft%28n%5Clog%5Cleft%20%28%20n%20%5Cright%20%29%20%5Cright%29)| Merge Sort ![equation](https://latex.codecogs.com/gif.latex?O%5Cleft%28n%5Clog%5Cleft%20%28%20n%20%5Cright%20%29%20%5Cright%29)| Using a Trie ![equation](https://latex.codecogs.com/gif.latex?O%5Cleft%20%28n%20%5Cright%20%29) |
 |:-------:|:---------------------:|:--------------------:|:-----------------:|:-------------------:|:------------:|
 |  Asger  |      NULL             |      NULL            |    NULL           |    NULL             |     NULL     |
-| Camilla |      6.443.783ms      |      9.851.730ms     |    953ms          |    678ms            |     33ms     |
+| Camilla |      6.443.783ms      |      9.851.730ms     |    937ms          |    654ms            |     87ms     |
 |   Rúni  |      NULL             |      NULL            |    1532ms           |    1095ms         |     179ms    |
 
 ## References
