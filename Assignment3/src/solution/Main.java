@@ -15,10 +15,10 @@ public class Main {
         try {
             String[] shakespeare = FileUtility.toStringArray("src/data/shakespeare-complete-works.txt");
             //time("Insertion", shakespeare);
-            //time("Selection", shakespeare);
+            time("Selection", shakespeare);
             //time("Heap", shakespeare);
             //time("Merge", shakespeare);
-            time("Trie", shakespeare);
+            //time("Trie", shakespeare);
         } catch (IOException e) {
             System.out.println("File not found -> " + e.getMessage());
         }
