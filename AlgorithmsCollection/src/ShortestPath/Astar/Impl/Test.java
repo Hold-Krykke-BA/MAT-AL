@@ -8,7 +8,8 @@ public class Test
     public static void main(String[] args)
     {
         AStarProblem problem = new ManhattanProblem(new ExampleManhattanGraph());
+        AStarAlgorithm test = new AStarAlgorithm(problem, 11, 62);
         DirectedGraph g = problem.getGraph();
-        System.out.println(g);
+        System.out.println(test.path(62));
     }
 }
