@@ -26,8 +26,7 @@ public class Test {
          */
 
         /*
-        5. Defend the choice of datastructure with regard of time and space complexity
-(big O).
+        5. Defend the choice of datastructure with regard of time and space complexity (big O).
          */
     }
 }
