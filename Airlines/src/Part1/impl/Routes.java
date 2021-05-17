@@ -62,7 +62,7 @@ public class Routes {
         if (this == o) return true;
         if (!(o instanceof Routes)) return false;
         Routes routes = (Routes) o;
-        return getSourceCode().equals(routes.getSourceCode()) && getDestinationCode().equals(routes.getDestinationCode());
+        return getAirlineCode().equals(routes.getAirlineCode()) && getSourceCode().equals(routes.getSourceCode()) && getDestinationCode().equals(routes.getDestinationCode()) && getDistance().equals(routes.getDistance()) && getTime().equals(routes.getTime());
     }
 
     @Override
