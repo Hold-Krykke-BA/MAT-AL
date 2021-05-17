@@ -39,8 +39,8 @@ public class Graph1 implements IGraph1, IGraphBuilder1 {
     }
 
     @Override
-    public void addEdge(String v1, String v2, float weight) {
-        IEdge1 e = new Edge1(v1, v2, weight);
+    public void addEdge(String v1, String v2, String airline) {
+        IEdge1 e = new Edge1(v1, v2, airline);
         allEdges.add(e);
         addEdgeToList(v1, e);
         addEdgeToList(v2, e);
@@ -71,7 +71,7 @@ public class Graph1 implements IGraph1, IGraphBuilder1 {
             res.append(' ');
             res.append(e.to());
             res.append(' ');
-            res.append(e.weight());
+            res.append(e.airline());
             res.append('\n');
         }
         return res.toString();

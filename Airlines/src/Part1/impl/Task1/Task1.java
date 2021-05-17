@@ -19,12 +19,17 @@ public class Task1 {
         for (Routes route : routes) {
             String v1 = route.getSourceCode();
             String v2 = route.getDestinationCode();
-            
-            builder.addEdge(v1, v2, 0); // ????
+
+            builder.addEdge(v1, v2, route.getAirlineCode());
         }
 
         IGraph1 graph = builder.build();
         System.out.println(graph.toString());
+
+        BreadthFirst bfs = new BreadthFirst(graph);
+        System.out.println(bfs.hasPath("AER", "PEM", "2B"));
+
+
 
 
     }

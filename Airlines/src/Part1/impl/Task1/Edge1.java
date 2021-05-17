@@ -5,9 +5,9 @@ import Part1.impl.Task3.EdgeTask3;
 public class Edge1 implements IEdge1{
 
     private String a, b; //vertex left, right
-    private float w; //weight
+    private String w; //airline
 
-    public Edge1(String a, String b, float w) {
+    public Edge1(String a, String b, String w) {
         this.a = a;
         this.b = b;
         this.w = w;
@@ -24,20 +24,13 @@ public class Edge1 implements IEdge1{
     }
 
     @Override
-    public float weight() {
+    public String airline() {
         return w;
     }
 
     @Override
-    public int compareTo(IEdge1 o) {
-        //this.compareTo(other) < 0 if this < other
-        //this.compareTo(other) = 0 if this == other
-        //this.compareTo(other) > 0 if this > other
-        //if(this.w < o.getWeight()) return ...
-        //TOG's way:
-        float f = this.w - o.weight();
-        if (f > 0) return 1;
-        if (f < 0) return -1;
+    public int compareTo(IEdge1 other) {
+        if (!other.airline().equals(airline())) return -1;
         return 0;
     }
 }
