@@ -28,7 +28,7 @@ public class BreadthFirst {
         this.graph = graph1;
     }
 
-    public boolean hasPath(String src, String dest, String airline){
+    public boolean hasConnection(String src, String dest, String airline){
         visited.add(src);
         queue.add(src);
         while (!queue.isEmpty()){

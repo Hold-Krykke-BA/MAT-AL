@@ -27,7 +27,7 @@ public class Task1 {
         System.out.println(graph.toString());
 
         BreadthFirst bfs = new BreadthFirst(graph);
-        System.out.println(bfs.hasPath("AER", "PEM", "2B"));
+        System.out.println(bfs.hasConnection("AER", "PEM", "2B"));
 
 
 
