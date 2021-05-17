@@ -1,11 +1,8 @@
 package Part1.impl.Task1;
 
-import Part1.impl.Aircrafts;
-import Part1.impl.Airlines;
-import Part1.impl.Airports;
-import Part1.impl.Routes;
+import Part1.impl.*;
 import Part1.utils.ReadCSVFromFile;
-
+import java.io.IOException;
 import java.util.List;
 
 /*
@@ -13,13 +10,22 @@ import java.util.List;
    company. You should compare Breath-First and Depth-First approaches.
 */
 public class Task1 {
-    ReadCSVFromFile rsv = new ReadCSVFromFile();
-    String path = "src/Part1/data/routes.txt";
+    public static void main(String[] args) throws IOException {
+
+        ReadCSVFromFile rsv = new ReadCSVFromFile();
+        List<Routes> routes = rsv.readRoutes("src/Part1/data/routes.txt", ";");
+
+        IGraphBuilder1 builder = new Graph1();
+        for (Routes route : routes) {
+            String v1 = route.getSourceCode();
+            String v2 = route.getDestinationCode();
+            
+            builder.addEdge(v1, v2, 0); // ????
+        }
+
+        IGraph1 graph = builder.build();
+        System.out.println(graph.toString());
 
 
-//    rsv.readRoutes(path, ";");
-//    rsv.readAircrafts(path, ";");
-//    rsv.readAirlines(path, ";");
-//    rsv.readAirports(path, ";");
-
+    }
 }
