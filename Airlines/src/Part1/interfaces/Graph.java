@@ -15,4 +15,8 @@ package Part1.interfaces;
  * Defend choice of data structure (time & space complexity)
  */
 public interface Graph {
+    int V(); //vertex
+    int E(); //Edge
+    Iterable<Edge> adj(int v);
+    Iterable<Edge> edges();
 }
