@@ -1,5 +1,4 @@
 CODE;NAME;COUNTRY
--;Private flight;
 1T;1Time Airline;South Africa
 Q5;40-Mile Air;United States
 AN;Ansett Australia;Australia
@@ -184,7 +183,7 @@ EI;Aer Lingus;Ireland
 E8;City Airways;Thailand
 KY;KSY;Greece
 PC;Pegasus Airlines;Turkey
-OF;Transports et Travaux A;
+OF;Transports et Travaux A; Madagascar
 FJ;Air Pacific;Fiji
 RC;Atlantic Airways;Faroe Islands
 QH;Kyrgyzstan;Kyrgyzstan
@@ -271,7 +270,7 @@ A8;Benin Golf Air;Benin
 4T;Belair Airlines;Switzerland
 UP;Bahamasair;Bahamas
 E6;Aviaexpresscruise;Russia
-LZ;Balkan Bulgarian Airlines;
+LZ;Balkan Bulgarian Airlines; Bulgaria
 TH;TransBrasil Airlines;Brazil
 BS;British International Helicopters;United Kingdom
 PG;Bangkok Airways;Thailand
@@ -749,7 +748,7 @@ I6;MexicanaLink;Mexico
 7G;Star Flyer;Japan
 FA;Epic Holiday;United States
 SP;SATA Air Acores;Portugal
-8S;Scorpio Aviation;
+8S;Scorpio Aviation; Bulgaria
 SQ;Singapore Airlines Cargo;Singapore
 5M;Sibaviatrans;Russia
 SI;Skynet Airlines;Ireland
