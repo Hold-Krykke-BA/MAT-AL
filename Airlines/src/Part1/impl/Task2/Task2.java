@@ -32,13 +32,5 @@ public class Task2 {
         System.out.println(dijkstra);
         System.out.println(dijkstra.path("SCN"));
 
-        Float pathSize = 0F;
-        for (int i = dijkstra.shortestPathArr.size() - 1; i > 0; i--) {
-            int index = routes.indexOf(new Routes("", dijkstra.shortestPathArr.get(i), dijkstra.shortestPathArr.get(i - 1), "", ""));
-            Routes roi = routes.get(index);
-            System.out.print(roi.getDistance() + " -> ");
-            pathSize += Float.valueOf(roi.getDistance());
-        }
-        System.out.println("\nTotal length: " + pathSize);
     }
 }
