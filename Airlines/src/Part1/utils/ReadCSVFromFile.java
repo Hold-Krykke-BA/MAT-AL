@@ -57,7 +57,7 @@ public class ReadCSVFromFile {
                 //CODE;NAME;COUNTRY
                 //1T;1Time Airline;South Africa
                 String[] values = line.split(seperator);
-                airlines.add(new Aircrafts(values[0], values[1], values[2]));
+                airlines.add(new Airlines(values[0], values[1], values[2]));
             }
 
         }

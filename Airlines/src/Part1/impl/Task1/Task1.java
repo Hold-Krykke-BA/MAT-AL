@@ -26,8 +26,8 @@ public class Task1 {
         IGraph1 graph = builder.build();
         System.out.println(graph.toString());
 
-        BreadthFirst bfs = new BreadthFirst(graph);
-        System.out.println(bfs.hasConnection("AER", "PEM", "2B"));
+//        BreadthFirst bfs = new BreadthFirst(graph);
+//        System.out.println(bfs.hasConnection("AER", "PEM", "2B"));
 
 
 

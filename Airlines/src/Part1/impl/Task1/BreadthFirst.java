@@ -5,7 +5,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
-//procedure BFS(G, root) is
+// procedure BFS(G, root) is
 //    let Q be a queue
 //    label root as discovered
 //    Q.enqueue(root)
