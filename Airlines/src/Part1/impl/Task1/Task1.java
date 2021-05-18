@@ -24,10 +24,17 @@ public class Task1 {
         }
 
         IGraph1 graph = builder.build();
-        System.out.println(graph.toString());
+//        System.out.println(graph.toString());
 
-//        BreadthFirst bfs = new BreadthFirst(graph);
-//        System.out.println(bfs.hasConnection("AER", "PEM", "2B"));
+        BreadthFirst bfs = new BreadthFirst(graph);
+        DepthFirst dfs = new DepthFirst(graph);
+        System.out.println("BFS has found a connection AER-PEM with 2B: " + bfs.hasConnection("AER", "PEM", "2B") + "\n");
+        System.out.println("DFS has found a connection AER-PEM with 2B: " + dfs.hasConnection("AER", "PEM", "2B")+ "\n\n\n");
+
+        BreadthFirst bfs2 = new BreadthFirst(graph);
+        DepthFirst dfs2 = new DepthFirst(graph);
+        System.out.println("BFS2 has found a connection AER-SVX with 2B: " + bfs2.hasConnection("AER", "SVX", "2B") + "\n");
+        System.out.println("DFS2 has found a connection AER-SVX with 2B: " + dfs2.hasConnection("AER", "SVX", "2B"));
 
 
 

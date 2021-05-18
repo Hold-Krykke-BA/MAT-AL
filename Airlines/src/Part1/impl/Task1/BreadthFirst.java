@@ -33,24 +33,21 @@ public class BreadthFirst {
         queue.add(src);
         while (!queue.isEmpty()){
             String current = queue.poll();
-            System.out.println("Current: " + current);
             if (current.equals(dest)) {
+                System.out.println("BFS - Visited:\n" + visited.toString() + "\nVisited amount: " + visited.size());
                 return true;
             }
             for(IEdge1 edge : graph.adj(current)){
                 if(!edge.airline().equals(airline)){
-                    System.out.println("NOT CONNECTED: " + " source: " + src + " current "+ current + " edge from " +edge.from() + " edge to " + edge.to() + " airline is: " + edge.airline());
                     continue;
                 }
                 if(!visited.contains(edge.to())){
-                    System.out.println("*********************************************************************************************");
-                    System.out.println("Connected: " + " source: " + src + " current "+ current + " edge from " +edge.from() + " edge to " + edge.to() + " airline is: " + edge.airline());
-                    System.out.println("*********************************************************************************************");
                     visited.add(edge.to());
                     queue.add(edge.to());
                 }
             }
         }
+        System.out.println("BFS - Visited:\n" + visited.toString() + "\nVisited amount: " + visited.size());
         return false;
     }
 }
