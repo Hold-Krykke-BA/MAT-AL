@@ -85,10 +85,24 @@ public class Main {
             }
         }
         System.out.print(" spent sorting.\n");
-        System.out.printf("Comparisons: %d.", stringCountComparator.getCount());
+        System.out.printf("Comparisons: %,d.", stringCountComparator.getCount());
+
 
         /* Check if array is sorted according to isSorted*/
-        //MergeSort ms2 = new MergeSort();
-        //System.out.println("Is array sorted according to MergeSort? " + ms2.isSorted(stringCountComparator, array));
+        MergeSort ms2 = new MergeSort();
+        System.out.println("\nIs array sorted according to MergeSort? " + ms2.isSorted(stringCountComparator, array));
+
+        System.out.println("Beginning of array:");
+        ms2.print(array, 10);
+
+        System.out.println("Middle of array:");
+        ms2.print(array, array.length/2, (array.length/2)+10);
+
+        System.out.println("End of array:");
+        ms2.print(array,array.length-10, array.length);
+
+        //A = 1st character of the alphabet
+        //M = 13th (middle) character of the alphabet
+        //A = 26th (last) character of the alphabet
     }
 }
