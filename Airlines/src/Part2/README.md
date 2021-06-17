@@ -17,7 +17,8 @@ on each line.
 ...
 
 ## Solution
-...
+See solution in this repo:  
+https://github.com/Hold-Krykke-BA/MAT-AL/tree/main/AlgorithmsCollection/src/ShortestPath/Astar
 
 ## References
 ...
